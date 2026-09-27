@@ -39,55 +39,8 @@ dsa-tracker/
 └── README.md
 ```
 
----
 
-## ☁️ Deployment Instructions
 
-### 1. Push to GitHub
-In this directory:
-```bash
-git init
-git add .
-git commit -m "Initial commit of LeetPulse FAANG DSA Tracker"
-git branch -M main
-git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPO_NAME>.git
-git push -u origin main
-```
 
----
-
-### 2. Deploy Backend on Render (https://render.com)
-1. Sign up/Log in to **Render** and click **New +** $\rightarrow$ **Web Service**.
-2. Connect your GitHub repository.
-3. Configure settings:
-   - **Name**: `leetpulse-backend`
-   - **Root Directory**: `backend`
-   - **Runtime**: `Node`
-   - **Build Command**: `npm install`
-   - **Start Command**: `node server.js`
-4. In **Environment Variables**, add:
-   - `MONGO_URI` = `mongodb+srv://SANJU386:S%40nju12345@sanju.kdjrh0n.mongodb.net/dsa_tracker?appName=SANJU`
-   - `JWT_SECRET` = `super_secret_jwt_key_leetpulse_faang_2026_dsa`
-   - `DAILY_TARGET` = `5`
-   - `SMTP_HOST` = `smtp.gmail.com`
-   - `SMTP_PORT` = `465`
-   - `SMTP_SECURE` = `true`
-   - `SMTP_USER` = `sirshendubera386@gmail.com`
-   - `SMTP_PASS` = `zwikcmgqxldksxlk`
-   - `SENDER_NAME` = `LeetPulse Verification`
-   - `SENDER_EMAIL` = `sirshendubera386@gmail.com`
-5. Click **Create Web Service**.
-6. Once deployed, copy your backend URL (e.g., `https://leetpulse-backend.onrender.com`).
-
----
-
-### 3. Deploy Frontend on Vercel (https://vercel.com)
-1. Log in to **Vercel** and click **Add New...** $\rightarrow$ **Project**.
-2. Import your GitHub repository.
-3. In project configuration:
-   - **Root Directory**: Click *Edit* and select **`frontend`**.
-   - **Framework Preset**: *Vite* (auto-detected).
-4. In **Environment Variables**, add:
-   - Key: `VITE_API_URL`
    - Value: Your Render backend URL (e.g. `https://leetpulse-backend.onrender.com` without trailing slash).
 5. Click **Deploy**!
