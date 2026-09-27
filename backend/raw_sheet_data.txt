@@ -1,0 +1,2150 @@
+🔥 TOP 300 LEETCODE — FAANG INTERVIEW ROADMAP
+1. Arrays — 1D + Hashing — 45 problems
+#
+Problem
+Diff
+LC
+1
+⭐ Two Sum
+🟢
+[LC 1](https://leetcode.com/problems/two-sum/?utm_source=chatgpt.com)
+2
+⭐ Contains Duplicate
+🟢
+[LC 217](https://leetcode.com/problems/contains-duplicate/?utm_source=chatgpt.com)
+3
+⭐ Valid Anagram
+🟢
+[LC 242](https://leetcode.com/problems/valid-anagram/?utm_source=chatgpt.com)
+4
+⭐ Group Anagrams
+🟡
+[LC 49](https://leetcode.com/problems/group-anagrams/?utm_source=chatgpt.com)
+5
+⭐ Top K Frequent Elements
+🟡
+[LC 347](https://leetcode.com/problems/top-k-frequent-elements/?utm_source=chatgpt.com)
+6
+⭐ Product of Array Except Self
+🟡
+[LC 238](https://leetcode.com/problems/product-of-array-except-self/?utm_source=chatgpt.com)
+7
+⭐ Maximum Subarray
+🟡
+[LC 53](https://leetcode.com/problems/maximum-subarray/?utm_source=chatgpt.com)
+8
+⭐ Maximum Product Subarray
+🟡
+[LC 152](https://leetcode.com/problems/maximum-product-subarray/?utm_source=chatgpt.com)
+9
+⭐ Longest Consecutive Sequence
+🟡
+[LC 128](https://leetcode.com/problems/longest-consecutive-sequence/?utm_source=chatgpt.com)
+10
+Majority Element
+🟢
+[LC 169](https://leetcode.com/problems/majority-element/?utm_source=chatgpt.com)
+11
+Majority Element II
+🟡
+[LC 229](https://leetcode.com/problems/majority-element-ii/?utm_source=chatgpt.com)
+12
+Missing Number
+🟢
+[LC 268](https://leetcode.com/problems/missing-number/?utm_source=chatgpt.com)
+13
+Find All Numbers Disappeared in an Array
+🟢
+[LC 448](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/?utm_source=chatgpt.com)
+14
+Find the Duplicate Number
+🟡
+[LC 287](https://leetcode.com/problems/find-the-duplicate-number/?utm_source=chatgpt.com)
+15
+Set Mismatch
+🟢
+[LC 645](https://leetcode.com/problems/set-mismatch/?utm_source=chatgpt.com)
+16
+Best Time to Buy and Sell Stock
+🟢
+[LC 121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/?utm_source=chatgpt.com)
+17
+Best Time to Buy and Sell Stock II
+🟡
+[LC 122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/?utm_source=chatgpt.com)
+18
+Move Zeroes
+🟢
+[LC 283](https://leetcode.com/problems/move-zeroes/?utm_source=chatgpt.com)
+19
+Remove Duplicates from Sorted Array
+🟢
+[LC 26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/?utm_source=chatgpt.com)
+20
+Remove Element
+🟢
+[LC 27](https://leetcode.com/problems/remove-element/?utm_source=chatgpt.com)
+21
+Merge Sorted Array
+🟢
+[LC 88](https://leetcode.com/problems/merge-sorted-array/?utm_source=chatgpt.com)
+22
+Rotate Array
+🟡
+[LC 189](https://leetcode.com/problems/rotate-array/?utm_source=chatgpt.com)
+23
+Sort Colors
+🟡
+[LC 75](https://leetcode.com/problems/sort-colors/?utm_source=chatgpt.com)
+24
+Find Pivot Index
+🟢
+[LC 724](https://leetcode.com/problems/find-pivot-index/?utm_source=chatgpt.com)
+25
+Subarray Sum Equals K
+🟡
+[LC 560](https://leetcode.com/problems/subarray-sum-equals-k/?utm_source=chatgpt.com)
+26
+Continuous Subarray Sum
+🟡
+[LC 523](https://leetcode.com/problems/continuous-subarray-sum/?utm_source=chatgpt.com)
+27
+Subarray Sums Divisible by K
+🟡
+[LC 974](https://leetcode.com/problems/subarray-sums-divisible-by-k/?utm_source=chatgpt.com)
+28
+Find the Highest Altitude
+🟢
+[LC 1732](https://leetcode.com/problems/find-the-highest-altitude/?utm_source=chatgpt.com)
+29
+Running Sum of 1d Array
+🟢
+[LC 1480](https://leetcode.com/problems/running-sum-of-1d-array/?utm_source=chatgpt.com)
+30
+Range Sum Query - Immutable
+🟢
+[LC 303](https://leetcode.com/problems/range-sum-query-immutable/?utm_source=chatgpt.com)
+31
+Merge Intervals
+🟡
+[LC 56](https://leetcode.com/problems/merge-intervals/?utm_source=chatgpt.com)
+32
+Insert Interval
+🟡
+[LC 57](https://leetcode.com/problems/insert-interval/?utm_source=chatgpt.com)
+33
+Non-overlapping Intervals
+🟡
+[LC 435](https://leetcode.com/problems/non-overlapping-intervals/?utm_source=chatgpt.com)
+34
+⭐ 3Sum
+🟡
+[LC 15](https://leetcode.com/problems/3sum/?utm_source=chatgpt.com)
+35
+4Sum
+🟡
+[LC 18](https://leetcode.com/problems/4sum/?utm_source=chatgpt.com)
+36
+⭐ Container With Most Water
+🟡
+[LC 11](https://leetcode.com/problems/container-with-most-water/?utm_source=chatgpt.com)
+37
+Trapping Rain Water
+🔴
+[LC 42](https://leetcode.com/problems/trapping-rain-water/?utm_source=chatgpt.com)
+38
+First Missing Positive
+🔴
+[LC 41](https://leetcode.com/problems/first-missing-positive/?utm_source=chatgpt.com)
+39
+Product of Array Except Self
+🟡
+[LC 238](https://leetcode.com/problems/product-of-array-except-self/?utm_source=chatgpt.com)
+40
+Find the Difference of Two Arrays
+🟢
+[LC 2215](https://leetcode.com/problems/find-the-difference-of-two-arrays/?utm_source=chatgpt.com)
+41
+Unique Number of Occurrences
+🟢
+[LC 1207](https://leetcode.com/problems/unique-number-of-occurrences/?utm_source=chatgpt.com)
+42
+Can Make Arithmetic Progression From Sequence
+🟢
+[LC 1502](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/?utm_source=chatgpt.com)
+43
+Array of Doubled Pairs
+🟡
+[LC 954](https://leetcode.com/problems/array-of-doubled-pairs/?utm_source=chatgpt.com)
+44
+Maximum Sum Circular Subarray
+🟡
+[LC 918](https://leetcode.com/problems/maximum-sum-circular-subarray/?utm_source=chatgpt.com)
+45
+⭐ Shortest Unsorted Continuous Subarray
+🟡
+[LC 581](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/?utm_source=chatgpt.com)
+2. 2D Arrays / Matrix — 20 problems
+#
+Problem
+Diff
+LC
+46
+⭐ Set Matrix Zeroes
+🟡
+[LC 73](https://leetcode.com/problems/set-matrix-zeroes/?utm_source=chatgpt.com)
+47
+⭐ Spiral Matrix
+🟡
+[LC 54](https://leetcode.com/problems/spiral-matrix/?utm_source=chatgpt.com)
+48
+⭐ Rotate Image
+🟡
+[LC 48](https://leetcode.com/problems/rotate-image/?utm_source=chatgpt.com)
+49
+⭐ Word Search
+🟡
+[LC 79](https://leetcode.com/problems/word-search/?utm_source=chatgpt.com)
+50
+Search a 2D Matrix
+🟡
+[LC 74](https://leetcode.com/problems/search-a-2d-matrix/?utm_source=chatgpt.com)
+51
+Search a 2D Matrix II
+🟡
+[LC 240](https://leetcode.com/problems/search-a-2d-matrix-ii/?utm_source=chatgpt.com)
+52
+Reshape the Matrix
+🟢
+[LC 566](https://leetcode.com/problems/reshape-the-matrix/?utm_source=chatgpt.com)
+53
+Transpose Matrix
+🟢
+[LC 867](https://leetcode.com/problems/transpose-matrix/?utm_source=chatgpt.com)
+54
+Flood Fill
+🟢
+[LC 733](https://leetcode.com/problems/flood-fill/?utm_source=chatgpt.com)
+55
+⭐ Number of Islands
+🟡
+[LC 200](https://leetcode.com/problems/number-of-islands/?utm_source=chatgpt.com)
+56
+Max Area of Island
+🟡
+[LC 695](https://leetcode.com/problems/max-area-of-island/?utm_source=chatgpt.com)
+57
+Surrounded Regions
+🟡
+[LC 130](https://leetcode.com/problems/surrounded-regions/?utm_source=chatgpt.com)
+58
+Pacific Atlantic Water Flow
+🟡
+[LC 417](https://leetcode.com/problems/pacific-atlantic-water-flow/?utm_source=chatgpt.com)
+59
+Rotting Oranges
+🟡
+[LC 994](https://leetcode.com/problems/rotting-oranges/?utm_source=chatgpt.com)
+60
+Game of Life
+🟡
+[LC 289](https://leetcode.com/problems/game-of-life/?utm_source=chatgpt.com)
+61
+Count Negative Numbers in a Sorted Matrix
+🟢
+[LC 1351](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/?utm_source=chatgpt.com)
+62
+Diagonal Traverse
+🟡
+[LC 498](https://leetcode.com/problems/diagonal-traverse/?utm_source=chatgpt.com)
+63
+Spiral Matrix II
+🟡
+[LC 59](https://leetcode.com/problems/spiral-matrix-ii/?utm_source=chatgpt.com)
+64
+Kth Smallest Element in a Sorted Matrix
+🟡
+[LC 378](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/?utm_source=chatgpt.com)
+65
+⭐ Minimum Path Sum
+🟡
+[LC 64](https://leetcode.com/problems/minimum-path-sum/?utm_source=chatgpt.com)
+3. Strings — 30 problems
+#
+Problem
+Diff
+LC
+66
+⭐ Valid Palindrome
+🟢
+[LC 125](https://leetcode.com/problems/valid-palindrome/?utm_source=chatgpt.com)
+67
+⭐ Valid Parentheses
+🟢
+[LC 20](https://leetcode.com/problems/valid-parentheses/?utm_source=chatgpt.com)
+68
+⭐ Valid Anagram
+🟢
+[LC 242](https://leetcode.com/problems/valid-anagram/?utm_source=chatgpt.com)
+69
+Isomorphic Strings
+🟢
+[LC 205](https://leetcode.com/problems/isomorphic-strings/?utm_source=chatgpt.com)
+70
+Word Pattern
+🟢
+[LC 290](https://leetcode.com/problems/word-pattern/?utm_source=chatgpt.com)
+71
+Longest Common Prefix
+🟢
+[LC 14](https://leetcode.com/problems/longest-common-prefix/?utm_source=chatgpt.com)
+72
+Reverse String
+🟢
+[LC 344](https://leetcode.com/problems/reverse-string/?utm_source=chatgpt.com)
+73
+Reverse Words in a String
+🟡
+[LC 151](https://leetcode.com/problems/reverse-words-in-a-string/?utm_source=chatgpt.com)
+74
+Reverse Words in a String III
+🟢
+[LC 557](https://leetcode.com/problems/reverse-words-in-a-string-iii/?utm_source=chatgpt.com)
+75
+⭐ Longest Palindromic Substring
+🟡
+[LC 5](https://leetcode.com/problems/longest-palindromic-substring/?utm_source=chatgpt.com)
+76
+Palindromic Substrings
+🟡
+[LC 647](https://leetcode.com/problems/palindromic-substrings/?utm_source=chatgpt.com)
+77
+Longest Palindrome
+🟢
+[LC 409](https://leetcode.com/problems/longest-palindrome/?utm_source=chatgpt.com)
+78
+Valid Palindrome II
+🟢
+[LC 680](https://leetcode.com/problems/valid-palindrome-ii/?utm_source=chatgpt.com)
+79
+Add Strings
+🟢
+[LC 415](https://leetcode.com/problems/add-strings/?utm_source=chatgpt.com)
+80
+Add Binary
+🟢
+[LC 67](https://leetcode.com/problems/add-binary/?utm_source=chatgpt.com)
+81
+Multiply Strings
+🟡
+[LC 43](https://leetcode.com/problems/multiply-strings/?utm_source=chatgpt.com)
+82
+String Compression
+🟡
+[LC 443](https://leetcode.com/problems/string-compression/?utm_source=chatgpt.com)
+83
+Encode and Decode Strings
+🟡
+[LC 271](https://leetcode.com/problems/encode-and-decode-strings/?utm_source=chatgpt.com)
+84
+Group Anagrams
+🟡
+[LC 49](https://leetcode.com/problems/group-anagrams/?utm_source=chatgpt.com)
+85
+⭐ Longest Substring Without Repeating Characters
+🟡
+[LC 3](https://leetcode.com/problems/longest-substring-without-repeating-characters/?utm_source=chatgpt.com)
+86
+⭐ Longest Repeating Character Replacement
+🟡
+[LC 424](https://leetcode.com/problems/longest-repeating-character-replacement/?utm_source=chatgpt.com)
+87
+⭐ Minimum Window Substring
+🔴
+[LC 76](https://leetcode.com/problems/minimum-window-substring/?utm_source=chatgpt.com)
+88
+Find All Anagrams in a String
+🟡
+[LC 438](https://leetcode.com/problems/find-all-anagrams-in-a-string/?utm_source=chatgpt.com)
+89
+Permutation in String
+🟡
+[LC 567](https://leetcode.com/problems/permutation-in-string/?utm_source=chatgpt.com)
+90
+Sort Characters By Frequency
+🟡
+[LC 451](https://leetcode.com/problems/sort-characters-by-frequency/?utm_source=chatgpt.com)
+91
+Reorganize String
+🟡
+[LC 767](https://leetcode.com/problems/reorganize-string/?utm_source=chatgpt.com)
+92
+Partition Labels
+🟡
+[LC 763](https://leetcode.com/problems/partition-labels/?utm_source=chatgpt.com)
+93
+⭐ Word Break
+🟡
+[LC 139](https://leetcode.com/problems/word-break/?utm_source=chatgpt.com)
+94
+Decode String
+🟡
+[LC 394](https://leetcode.com/problems/decode-string/?utm_source=chatgpt.com)
+95
+⭐ Text Justification
+🔴
+[LC 68](https://leetcode.com/problems/text-justification/?utm_source=chatgpt.com)
+4. Sliding Window — 25 problems
+#
+Problem
+Diff
+LC
+96
+⭐ Best Time to Buy and Sell Stock
+🟢
+[121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/?utm_source=chatgpt.com)
+97
+⭐ Longest Substring Without Repeating Characters
+🟡
+[3](https://leetcode.com/problems/longest-substring-without-repeating-characters/?utm_source=chatgpt.com)
+98
+⭐ Longest Repeating Character Replacement
+🟡
+[424](https://leetcode.com/problems/longest-repeating-character-replacement/?utm_source=chatgpt.com)
+99
+⭐ Permutation in String
+🟡
+[567](https://leetcode.com/problems/permutation-in-string/?utm_source=chatgpt.com)
+100
+⭐ Find All Anagrams in a String
+🟡
+[438](https://leetcode.com/problems/find-all-anagrams-in-a-string/?utm_source=chatgpt.com)
+101
+⭐ Minimum Window Substring
+🔴
+[76](https://leetcode.com/problems/minimum-window-substring/?utm_source=chatgpt.com)
+102
+⭐ Sliding Window Maximum
+🔴
+[239](https://leetcode.com/problems/sliding-window-maximum/?utm_source=chatgpt.com)
+103
+Minimum Size Subarray Sum
+🟡
+[209](https://leetcode.com/problems/minimum-size-subarray-sum/?utm_source=chatgpt.com)
+104
+Maximum Average Subarray I
+🟢
+[643](https://leetcode.com/problems/maximum-average-subarray-i/?utm_source=chatgpt.com)
+105
+Max Consecutive Ones III
+🟡
+[1004](https://leetcode.com/problems/max-consecutive-ones-iii/?utm_source=chatgpt.com)
+106
+Fruit Into Baskets
+🟡
+[904](https://leetcode.com/problems/fruit-into-baskets/?utm_source=chatgpt.com)
+107
+Longest Subarray of 1's After Deleting One Element
+🟡
+[1493](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/?utm_source=chatgpt.com)
+108
+Number of Substrings Containing All Three Characters
+🟡
+[1358](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/?utm_source=chatgpt.com)
+109
+Subarrays with K Different Integers
+🔴
+[992](https://leetcode.com/problems/subarrays-with-k-different-integers/?utm_source=chatgpt.com)
+110
+Count Number of Nice Subarrays
+🟡
+[1248](https://leetcode.com/problems/count-number-of-nice-subarrays/?utm_source=chatgpt.com)
+111
+Maximum Points You Can Obtain from Cards
+🟡
+[1423](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/?utm_source=chatgpt.com)
+112
+Maximum Number of Vowels in a Substring of Given Length
+🟡
+[1456](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/?utm_source=chatgpt.com)
+113
+Longest Nice Subarray
+🟡
+[2401](https://leetcode.com/problems/longest-nice-subarray/?utm_source=chatgpt.com)
+114
+Count Subarrays Where Max Element Appears at Least K Times
+🟡
+[2962](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/?utm_source=chatgpt.com)
+115
+Frequency of the Most Frequent Element
+🟡
+[1838](https://leetcode.com/problems/frequency-of-the-most-frequent-element/?utm_source=chatgpt.com)
+116
+Longest Continuous Subarray With Absolute Diff ≤ Limit
+🟡
+[1438](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/?utm_source=chatgpt.com)
+117
+Minimum Operations to Reduce X to Zero
+🟡
+[1658](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/?utm_source=chatgpt.com)
+118
+Binary Subarrays With Sum
+🟡
+[930](https://leetcode.com/problems/binary-subarrays-with-sum/?utm_source=chatgpt.com)
+119
+Subarray Product Less Than K
+🟡
+[713](https://leetcode.com/problems/subarray-product-less-than-k/?utm_source=chatgpt.com)
+120
+Minimum Recolors to Get K Consecutive Black Blocks
+🟢
+[2379](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/?utm_source=chatgpt.com)
+5. Two Pointers — 15 problems
+#
+Problem
+Diff
+LC
+121
+⭐ Two Sum II
+🟡
+[167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/?utm_source=chatgpt.com)
+122
+⭐ 3Sum
+🟡
+[15](https://leetcode.com/problems/3sum/?utm_source=chatgpt.com)
+123
+4Sum
+🟡
+[18](https://leetcode.com/problems/4sum/?utm_source=chatgpt.com)
+124
+⭐ Container With Most Water
+🟡
+[11](https://leetcode.com/problems/container-with-most-water/?utm_source=chatgpt.com)
+125
+⭐ Trapping Rain Water
+🔴
+[42](https://leetcode.com/problems/trapping-rain-water/?utm_source=chatgpt.com)
+126
+Valid Palindrome
+🟢
+[125](https://leetcode.com/problems/valid-palindrome/?utm_source=chatgpt.com)
+127
+Valid Palindrome II
+🟢
+[680](https://leetcode.com/problems/valid-palindrome-ii/?utm_source=chatgpt.com)
+128
+Remove Duplicates from Sorted Array
+🟢
+[26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/?utm_source=chatgpt.com)
+129
+Move Zeroes
+🟢
+[283](https://leetcode.com/problems/move-zeroes/?utm_source=chatgpt.com)
+130
+Squares of a Sorted Array
+🟢
+[977](https://leetcode.com/problems/squares-of-a-sorted-array/?utm_source=chatgpt.com)
+131
+Backspace String Compare
+🟢
+[844](https://leetcode.com/problems/backspace-string-compare/?utm_source=chatgpt.com)
+132
+Boats to Save People
+🟡
+[881](https://leetcode.com/problems/boats-to-save-people/?utm_source=chatgpt.com)
+133
+Sort Colors
+🟡
+[75](https://leetcode.com/problems/sort-colors/?utm_source=chatgpt.com)
+134
+Merge Sorted Array
+🟢
+[88](https://leetcode.com/problems/merge-sorted-array/?utm_source=chatgpt.com)
+135
+String Compression
+🟡
+[443](https://leetcode.com/problems/string-compression/?utm_source=chatgpt.com)
+6. Recursion + Backtracking — 25 problems
+#
+Problem
+Diff
+LC
+136
+⭐ Subsets
+🟡
+[78](https://leetcode.com/problems/subsets/?utm_source=chatgpt.com)
+137
+⭐ Subsets II
+🟡
+[90](https://leetcode.com/problems/subsets-ii/?utm_source=chatgpt.com)
+138
+⭐ Permutations
+🟡
+[46](https://leetcode.com/problems/permutations/?utm_source=chatgpt.com)
+139
+Permutations II
+🟡
+[47](https://leetcode.com/problems/permutations-ii/?utm_source=chatgpt.com)
+140
+⭐ Combination Sum
+🟡
+[39](https://leetcode.com/problems/combination-sum/?utm_source=chatgpt.com)
+141
+Combination Sum II
+🟡
+[40](https://leetcode.com/problems/combination-sum-ii/?utm_source=chatgpt.com)
+142
+Combination Sum III
+🟡
+[216](https://leetcode.com/problems/combination-sum-iii/?utm_source=chatgpt.com)
+143
+Letter Combinations of a Phone Number
+🟡
+[17](https://leetcode.com/problems/letter-combinations-of-a-phone-number/?utm_source=chatgpt.com)
+144
+⭐ Generate Parentheses
+🟡
+[22](https://leetcode.com/problems/generate-parentheses/?utm_source=chatgpt.com)
+145
+⭐ Word Search
+🟡
+[79](https://leetcode.com/problems/word-search/?utm_source=chatgpt.com)
+146
+Palindrome Partitioning
+🟡
+[131](https://leetcode.com/problems/palindrome-partitioning/?utm_source=chatgpt.com)
+147
+Restore IP Addresses
+🟡
+[93](https://leetcode.com/problems/restore-ip-addresses/?utm_source=chatgpt.com)
+148
+N-Queens
+🔴
+[51](https://leetcode.com/problems/n-queens/?utm_source=chatgpt.com)
+149
+N-Queens II
+🔴
+[52](https://leetcode.com/problems/n-queens-ii/?utm_source=chatgpt.com)
+150
+Sudoku Solver
+🔴
+[37](https://leetcode.com/problems/sudoku-solver/?utm_source=chatgpt.com)
+151
+⭐ Word Search II
+🔴
+[212](https://leetcode.com/problems/word-search-ii/?utm_source=chatgpt.com)
+152
+Matchsticks to Square
+🟡
+[473](https://leetcode.com/problems/matchsticks-to-square/?utm_source=chatgpt.com)
+153
+Letter Tile Possibilities
+🟡
+[1079](https://leetcode.com/problems/letter-tile-possibilities/?utm_source=chatgpt.com)
+154
+Beautiful Arrangement
+🟡
+[526](https://leetcode.com/problems/beautiful-arrangement/?utm_source=chatgpt.com)
+155
+Combination Sum IV
+🟡
+[377](https://leetcode.com/problems/combination-sum-iv/?utm_source=chatgpt.com)
+156
+Climbing Stairs
+🟢
+[70](https://leetcode.com/problems/climbing-stairs/?utm_source=chatgpt.com)
+157
+Pow(x,n)
+🟡
+[50](https://leetcode.com/problems/powx-n/?utm_source=chatgpt.com)
+158
+K-th Symbol in Grammar
+🟡
+[779](https://leetcode.com/problems/k-th-symbol-in-grammar/?utm_source=chatgpt.com)
+159
+Different Ways to Add Parentheses
+🟡
+[241](https://leetcode.com/problems/different-ways-to-add-parentheses/?utm_source=chatgpt.com)
+160
+Predict the Winner
+🟡
+[486](https://leetcode.com/problems/predict-the-winner/?utm_source=chatgpt.com)
+7. Linked List — 25 problems
+#
+Problem
+Diff
+LC
+161
+⭐ Reverse Linked List
+🟢
+[206](https://leetcode.com/problems/reverse-linked-list/?utm_source=chatgpt.com)
+162
+⭐ Merge Two Sorted Lists
+🟢
+[21](https://leetcode.com/problems/merge-two-sorted-lists/?utm_source=chatgpt.com)
+163
+⭐ Linked List Cycle
+🟢
+[141](https://leetcode.com/problems/linked-list-cycle/?utm_source=chatgpt.com)
+164
+⭐ Linked List Cycle II
+🟡
+[142](https://leetcode.com/problems/linked-list-cycle-ii/?utm_source=chatgpt.com)
+165
+⭐ Middle of the Linked List
+🟢
+[876](https://leetcode.com/problems/middle-of-the-linked-list/?utm_source=chatgpt.com)
+166
+Remove Nth Node From End of List
+🟡
+[19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/?utm_source=chatgpt.com)
+167
+⭐ Add Two Numbers
+🟡
+[2](https://leetcode.com/problems/add-two-numbers/?utm_source=chatgpt.com)
+168
+Palindrome Linked List
+🟢
+[234](https://leetcode.com/problems/palindrome-linked-list/?utm_source=chatgpt.com)
+169
+Intersection of Two Linked Lists
+🟢
+[160](https://leetcode.com/problems/intersection-of-two-linked-lists/?utm_source=chatgpt.com)
+170
+Delete Node in a Linked List
+🟢
+[237](https://leetcode.com/problems/delete-node-in-a-linked-list/?utm_source=chatgpt.com)
+171
+⭐ Reorder List
+🟡
+[143](https://leetcode.com/problems/reorder-list/?utm_source=chatgpt.com)
+172
+⭐ LRU Cache
+🟡
+[146](https://leetcode.com/problems/lru-cache/?utm_source=chatgpt.com)
+173
+Sort List
+🟡
+[148](https://leetcode.com/problems/sort-list/?utm_source=chatgpt.com)
+174
+Merge k Sorted Lists
+🔴
+[23](https://leetcode.com/problems/merge-k-sorted-lists/?utm_source=chatgpt.com)
+175
+Reverse Nodes in k-Group
+🔴
+[25](https://leetcode.com/problems/reverse-nodes-in-k-group/?utm_source=chatgpt.com)
+176
+Rotate List
+🟡
+[61](https://leetcode.com/problems/rotate-list/?utm_source=chatgpt.com)
+177
+Copy List with Random Pointer
+🟡
+[138](https://leetcode.com/problems/copy-list-with-random-pointer/?utm_source=chatgpt.com)
+178
+Swap Nodes in Pairs
+🟡
+[24](https://leetcode.com/problems/swap-nodes-in-pairs/?utm_source=chatgpt.com)
+179
+Partition List
+🟡
+[86](https://leetcode.com/problems/partition-list/?utm_source=chatgpt.com)
+180
+Odd Even Linked List
+🟡
+[328](https://leetcode.com/problems/odd-even-linked-list/?utm_source=chatgpt.com)
+181
+Remove Duplicates from Sorted List
+🟢
+[83](https://leetcode.com/problems/remove-duplicates-from-sorted-list/?utm_source=chatgpt.com)
+182
+Remove Duplicates from Sorted List II
+🟡
+[82](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/?utm_source=chatgpt.com)
+183
+Design Linked List
+🟡
+[707](https://leetcode.com/problems/design-linked-list/?utm_source=chatgpt.com)
+184
+Flatten a Multilevel Doubly Linked List
+🟡
+[430](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/?utm_source=chatgpt.com)
+185
+Reverse Linked List II
+🟡
+[92](https://leetcode.com/problems/reverse-linked-list-ii/?utm_source=chatgpt.com)
+8. Stack + Queue + Monotonic Stack — 25 problems
+#
+Problem
+Diff
+LC
+186
+⭐ Valid Parentheses
+🟢
+[20](https://leetcode.com/problems/valid-parentheses/?utm_source=chatgpt.com)
+187
+⭐ Min Stack
+🟡
+[155](https://leetcode.com/problems/min-stack/?utm_source=chatgpt.com)
+188
+⭐ Evaluate Reverse Polish Notation
+🟡
+[150](https://leetcode.com/problems/evaluate-reverse-polish-notation/?utm_source=chatgpt.com)
+189
+⭐ Daily Temperatures
+🟡
+[739](https://leetcode.com/problems/daily-temperatures/?utm_source=chatgpt.com)
+190
+⭐ Next Greater Element I
+🟢
+[496](https://leetcode.com/problems/next-greater-element-i/?utm_source=chatgpt.com)
+191
+Next Greater Element II
+🟡
+[503](https://leetcode.com/problems/next-greater-element-ii/?utm_source=chatgpt.com)
+192
+⭐ Largest Rectangle in Histogram
+🔴
+[84](https://leetcode.com/problems/largest-rectangle-in-histogram/?utm_source=chatgpt.com)
+193
+⭐ Car Fleet
+🟡
+[853](https://leetcode.com/problems/car-fleet/?utm_source=chatgpt.com)
+194
+Asteroid Collision
+🟡
+[735](https://leetcode.com/problems/asteroid-collision/?utm_source=chatgpt.com)
+195
+Simplify Path
+🟡
+[71](https://leetcode.com/problems/simplify-path/?utm_source=chatgpt.com)
+196
+Decode String
+🟡
+[394](https://leetcode.com/problems/decode-string/?utm_source=chatgpt.com)
+197
+⭐ Implement Queue using Stacks
+🟢
+[232](https://leetcode.com/problems/implement-queue-using-stacks/?utm_source=chatgpt.com)
+198
+Implement Stack using Queues
+🟢
+[225](https://leetcode.com/problems/implement-stack-using-queues/?utm_source=chatgpt.com)
+199
+Design Circular Queue
+🟡
+[622](https://leetcode.com/problems/design-circular-queue/?utm_source=chatgpt.com)
+200
+Number of Recent Calls
+🟢
+[933](https://leetcode.com/problems/number-of-recent-calls/?utm_source=chatgpt.com)
+201
+Moving Average from Data Stream
+🟢
+[346](https://leetcode.com/problems/moving-average-from-data-stream/?utm_source=chatgpt.com)
+202
+Remove All Adjacent Duplicates In String
+🟢
+[1047](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/?utm_source=chatgpt.com)
+203
+Remove K Digits
+🟡
+[402](https://leetcode.com/problems/remove-k-digits/?utm_source=chatgpt.com)
+204
+⭐ Online Stock Span
+🟡
+[901](https://leetcode.com/problems/online-stock-span/?utm_source=chatgpt.com)
+205
+Remove Duplicate Letters
+🟡
+[316](https://leetcode.com/problems/remove-duplicate-letters/?utm_source=chatgpt.com)
+206
+Minimum Remove to Make Valid Parentheses
+🟡
+[1249](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/?utm_source=chatgpt.com)
+207
+Longest Valid Parentheses
+🔴
+[32](https://leetcode.com/problems/longest-valid-parentheses/?utm_source=chatgpt.com)
+208
+Basic Calculator
+🔴
+[224](https://leetcode.com/problems/basic-calculator/?utm_source=chatgpt.com)
+209
+Basic Calculator II
+🟡
+[227](https://leetcode.com/problems/basic-calculator-ii/?utm_source=chatgpt.com)
+210
+Sliding Window Maximum
+🔴
+[239](https://leetcode.com/problems/sliding-window-maximum/?utm_source=chatgpt.com)
+9. Basic Maths + Bit Manipulation — 15 problems
+#
+Problem
+Diff
+LC
+211
+⭐ Happy Number
+🟢
+[202](https://leetcode.com/problems/happy-number/?utm_source=chatgpt.com)
+212
+⭐ Plus One
+🟢
+[66](https://leetcode.com/problems/plus-one/?utm_source=chatgpt.com)
+213
+⭐ Pow(x,n)
+🟡
+[50](https://leetcode.com/problems/powx-n/?utm_source=chatgpt.com)
+214
+Palindrome Number
+🟢
+[9](https://leetcode.com/problems/palindrome-number/?utm_source=chatgpt.com)
+215
+Reverse Integer
+🟡
+[7](https://leetcode.com/problems/reverse-integer/?utm_source=chatgpt.com)
+216
+Roman to Integer
+🟢
+[13](https://leetcode.com/problems/roman-to-integer/?utm_source=chatgpt.com)
+217
+Integer to Roman
+🟡
+[12](https://leetcode.com/problems/integer-to-roman/?utm_source=chatgpt.com)
+218
+Sqrt(x)
+🟢
+[69](https://leetcode.com/problems/sqrtx/?utm_source=chatgpt.com)
+219
+Add Binary
+🟢
+[67](https://leetcode.com/problems/add-binary/?utm_source=chatgpt.com)
+220
+⭐ Single Number
+🟢
+[136](https://leetcode.com/problems/single-number/?utm_source=chatgpt.com)
+221
+Number of 1 Bits
+🟢
+[191](https://leetcode.com/problems/number-of-1-bits/?utm_source=chatgpt.com)
+222
+Counting Bits
+🟢
+[338](https://leetcode.com/problems/counting-bits/?utm_source=chatgpt.com)
+223
+Reverse Bits
+🟢
+[190](https://leetcode.com/problems/reverse-bits/?utm_source=chatgpt.com)
+224
+Missing Number
+🟢
+[268](https://leetcode.com/problems/missing-number/?utm_source=chatgpt.com)
+225
+Sum of Two Integers
+🟡
+[371](https://leetcode.com/problems/sum-of-two-integers/?utm_source=chatgpt.com)
+10. Greedy + Intervals — 25 problems
+#
+Problem
+Diff
+LC
+226
+⭐ Jump Game
+🟡
+[55](https://leetcode.com/problems/jump-game/?utm_source=chatgpt.com)
+227
+⭐ Jump Game II
+🟡
+[45](https://leetcode.com/problems/jump-game-ii/?utm_source=chatgpt.com)
+228
+⭐ Gas Station
+🟡
+[134](https://leetcode.com/problems/gas-station/?utm_source=chatgpt.com)
+229
+⭐ Partition Labels
+🟡
+[763](https://leetcode.com/problems/partition-labels/?utm_source=chatgpt.com)
+230
+⭐ Hand of Straights
+🟡
+[846](https://leetcode.com/problems/hand-of-straights/?utm_source=chatgpt.com)
+231
+Assign Cookies
+🟢
+[455](https://leetcode.com/problems/assign-cookies/?utm_source=chatgpt.com)
+232
+Lemonade Change
+🟢
+[860](https://leetcode.com/problems/lemonade-change/?utm_source=chatgpt.com)
+233
+Best Time to Buy and Sell Stock II
+🟡
+[122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/?utm_source=chatgpt.com)
+234
+⭐ Merge Intervals
+🟡
+[56](https://leetcode.com/problems/merge-intervals/?utm_source=chatgpt.com)
+235
+⭐ Insert Interval
+🟡
+[57](https://leetcode.com/problems/insert-interval/?utm_source=chatgpt.com)
+236
+⭐ Non-overlapping Intervals
+🟡
+[435](https://leetcode.com/problems/non-overlapping-intervals/?utm_source=chatgpt.com)
+237
+Meeting Rooms
+🟢
+[252](https://leetcode.com/problems/meeting-rooms/?utm_source=chatgpt.com)
+238
+Meeting Rooms II
+🟡
+[253](https://leetcode.com/problems/meeting-rooms-ii/?utm_source=chatgpt.com)
+239
+Queue Reconstruction by Height
+🟡
+[406](https://leetcode.com/problems/queue-reconstruction-by-height/?utm_source=chatgpt.com)
+240
+Candy
+🔴
+[135](https://leetcode.com/problems/candy/?utm_source=chatgpt.com)
+241
+⭐ Task Scheduler
+🟡
+[621](https://leetcode.com/problems/task-scheduler/?utm_source=chatgpt.com)
+242
+Remove Duplicate Letters
+🟡
+[316](https://leetcode.com/problems/remove-duplicate-letters/?utm_source=chatgpt.com)
+243
+Reorganize String
+🟡
+[767](https://leetcode.com/problems/reorganize-string/?utm_source=chatgpt.com)
+244
+Minimum Number of Arrows to Burst Balloons
+🟡
+[452](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/?utm_source=chatgpt.com)
+245
+Maximum Units on a Truck
+🟢
+[1710](https://leetcode.com/problems/maximum-units-on-a-truck/?utm_source=chatgpt.com)
+246
+Minimum Deletions to Make Character Frequencies Unique
+🟡
+[1647](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/?utm_source=chatgpt.com)
+247
+Wiggle Subsequence
+🟡
+[376](https://leetcode.com/problems/wiggle-subsequence/?utm_source=chatgpt.com)
+248
+Gas Station
+🟡
+[134](https://leetcode.com/problems/gas-station/?utm_source=chatgpt.com)
+249
+Eliminate Maximum Number of Monsters
+🟡
+[1921](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/?utm_source=chatgpt.com)
+250
+Maximum Subarray
+🟡
+[53](https://leetcode.com/problems/maximum-subarray/?utm_source=chatgpt.com)
+11. Binary Search — 15 problems
+#
+Problem
+Diff
+LC
+251
+⭐ Binary Search
+🟢
+[704](https://leetcode.com/problems/binary-search/?utm_source=chatgpt.com)
+252
+Search Insert Position
+🟢
+[35](https://leetcode.com/problems/search-insert-position/?utm_source=chatgpt.com)
+253
+⭐ First and Last Position of Element
+🟡
+[34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/?utm_source=chatgpt.com)
+254
+Search in Rotated Sorted Array
+🟡
+[33](https://leetcode.com/problems/search-in-rotated-sorted-array/?utm_source=chatgpt.com)
+255
+Search in Rotated Sorted Array II
+🟡
+[81](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/?utm_source=chatgpt.com)
+256
+Find Minimum in Rotated Sorted Array
+🟡
+[153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/?utm_source=chatgpt.com)
+257
+Find Peak Element
+🟡
+[162](https://leetcode.com/problems/find-peak-element/?utm_source=chatgpt.com)
+258
+⭐ Koko Eating Bananas
+🟡
+[875](https://leetcode.com/problems/koko-eating-bananas/?utm_source=chatgpt.com)
+259
+⭐ Capacity To Ship Packages Within D Days
+🟡
+[1011](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/?utm_source=chatgpt.com)
+260
+Split Array Largest Sum
+🔴
+[410](https://leetcode.com/problems/split-array-largest-sum/?utm_source=chatgpt.com)
+261
+Median of Two Sorted Arrays
+🔴
+[4](https://leetcode.com/problems/median-of-two-sorted-arrays/?utm_source=chatgpt.com)
+262
+Time Based Key-Value Store
+🟡
+[981](https://leetcode.com/problems/time-based-key-value-store/?utm_source=chatgpt.com)
+263
+Find K Closest Elements
+🟡
+[658](https://leetcode.com/problems/find-k-closest-elements/?utm_source=chatgpt.com)
+264
+Successful Pairs of Spells and Potions
+🟡
+[2300](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/?utm_source=chatgpt.com)
+265
+Search a 2D Matrix
+🟡
+[74](https://leetcode.com/problems/search-a-2d-matrix/?utm_source=chatgpt.com)
+12. Heap / Priority Queue — 15 problems
+#
+Problem
+Diff
+LC
+266
+⭐ Kth Largest Element in an Array
+🟡
+[215](https://leetcode.com/problems/kth-largest-element-in-an-array/?utm_source=chatgpt.com)
+267
+⭐ Top K Frequent Elements
+🟡
+[347](https://leetcode.com/problems/top-k-frequent-elements/?utm_source=chatgpt.com)
+268
+⭐ K Closest Points to Origin
+🟡
+[973](https://leetcode.com/problems/k-closest-points-to-origin/?utm_source=chatgpt.com)
+269
+⭐ Merge k Sorted Lists
+🔴
+[23](https://leetcode.com/problems/merge-k-sorted-lists/?utm_source=chatgpt.com)
+270
+Find Median from Data Stream
+🔴
+[295](https://leetcode.com/problems/find-median-from-data-stream/?utm_source=chatgpt.com)
+271
+Last Stone Weight
+🟢
+[1046](https://leetcode.com/problems/last-stone-weight/?utm_source=chatgpt.com)
+272
+Kth Largest Element in a Stream
+🟢
+[703](https://leetcode.com/problems/kth-largest-element-in-a-stream/?utm_source=chatgpt.com)
+273
+Task Scheduler
+🟡
+[621](https://leetcode.com/problems/task-scheduler/?utm_source=chatgpt.com)
+274
+Reorganize String
+🟡
+[767](https://leetcode.com/problems/reorganize-string/?utm_source=chatgpt.com)
+275
+Smallest Number in Infinite Set
+🟡
+[2336](https://leetcode.com/problems/smallest-number-in-infinite-set/?utm_source=chatgpt.com)
+276
+Find K Pairs with Smallest Sums
+🟡
+[373](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/?utm_source=chatgpt.com)
+277
+Meeting Rooms II
+🟡
+[253](https://leetcode.com/problems/meeting-rooms-ii/?utm_source=chatgpt.com)
+278
+IPO
+🔴
+[502](https://leetcode.com/problems/ipo/?utm_source=chatgpt.com)
+279
+Maximum Performance of a Team
+🔴
+[1383](https://leetcode.com/problems/maximum-performance-of-a-team/?utm_source=chatgpt.com)
+280
+Sliding Window Maximum
+🔴
+[239](https://leetcode.com/problems/sliding-window-maximum/?utm_source=chatgpt.com)
+13. Trees — 10 problems
+#
+Problem
+Diff
+LC
+281
+⭐ Maximum Depth of Binary Tree
+🟢
+[104](https://leetcode.com/problems/maximum-depth-of-binary-tree/?utm_source=chatgpt.com)
+282
+⭐ Binary Tree Level Order Traversal
+🟡
+[102](https://leetcode.com/problems/binary-tree-level-order-traversal/?utm_source=chatgpt.com)
+283
+⭐ Validate Binary Search Tree
+🟡
+[98](https://leetcode.com/problems/validate-binary-search-tree/?utm_source=chatgpt.com)
+284
+⭐ Lowest Common Ancestor of a Binary Tree
+🟡
+[236](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/?utm_source=chatgpt.com)
+285
+Diameter of Binary Tree
+🟢
+[543](https://leetcode.com/problems/diameter-of-binary-tree/?utm_source=chatgpt.com)
+286
+Invert Binary Tree
+🟢
+[226](https://leetcode.com/problems/invert-binary-tree/?utm_source=chatgpt.com)
+287
+Binary Tree Right Side View
+🟡
+[199](https://leetcode.com/problems/binary-tree-right-side-view/?utm_source=chatgpt.com)
+288
+Kth Smallest Element in a BST
+🟡
+[230](https://leetcode.com/problems/kth-smallest-element-in-a-bst/?utm_source=chatgpt.com)
+289
+⭐ Binary Tree Maximum Path Sum
+🔴
+[124](https://leetcode.com/problems/binary-tree-maximum-path-sum/?utm_source=chatgpt.com)
+290
+Serialize and Deserialize Binary Tree
+🔴
+[297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/?utm_source=chatgpt.com)
+14. Graphs — 10 problems
+#
+Problem
+Diff
+LC
+291
+⭐ Number of Islands
+🟡
+[200](https://leetcode.com/problems/number-of-islands/?utm_source=chatgpt.com)
+292
+⭐ Clone Graph
+🟡
+[133](https://leetcode.com/problems/clone-graph/?utm_source=chatgpt.com)
+293
+⭐ Course Schedule
+🟡
+[207](https://leetcode.com/problems/course-schedule/?utm_source=chatgpt.com)
+294
+Course Schedule II
+🟡
+[210](https://leetcode.com/problems/course-schedule-ii/?utm_source=chatgpt.com)
+295
+⭐ Rotting Oranges
+🟡
+[994](https://leetcode.com/problems/rotting-oranges/?utm_source=chatgpt.com)
+296
+Pacific Atlantic Water Flow
+🟡
+[417](https://leetcode.com/problems/pacific-atlantic-water-flow/?utm_source=chatgpt.com)
+297
+Graph Valid Tree
+🟡
+[261](https://leetcode.com/problems/graph-valid-tree/?utm_source=chatgpt.com)
+298
+Number of Connected Components in an Undirected Graph
+🟡
+[323](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/?utm_source=chatgpt.com)
+299
+Word Ladder
+🔴
+[127](https://leetcode.com/problems/word-ladder/?utm_source=chatgpt.com)
+300
+⭐ Network Delay Time
+🟡
+[743](https://leetcode.com/problems/network-delay-time/?utm_source=chatgpt.com)
+
+--- PART 2 ---
+🌳 PART 1 — TREES / BST / TREE DP
+60 Problems
+Basic → Intermediate Trees
+#
+Problem
+Diff
+Link
+1
+Same Tree
+🟢
+[LC 100](https://leetcode.com/problems/same-tree/)
+2
+Symmetric Tree
+🟢
+[LC 101](https://leetcode.com/problems/symmetric-tree/)
+3
+⭐ Path Sum
+🟢
+[LC 112](https://leetcode.com/problems/path-sum/)
+4
+Path Sum II
+🟡
+[LC 113](https://leetcode.com/problems/path-sum-ii/)
+5
+Path Sum III
+🟡
+[LC 437](https://leetcode.com/problems/path-sum-iii/)
+6
+Sum Root to Leaf Numbers
+🟡
+[LC 129](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
+7
+Binary Tree Preorder Traversal
+🟢
+[LC 144](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+8
+Binary Tree Inorder Traversal
+🟢
+[LC 94](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+9
+Binary Tree Postorder Traversal
+🟢
+[LC 145](https://leetcode.com/problems/binary-tree-postorder-traversal/)
+10
+⭐ Construct Binary Tree from Preorder and Inorder
+🟡
+[LC 105](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+11
+Construct Binary Tree from Inorder and Postorder
+🟡
+[LC 106](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
+12
+Populating Next Right Pointers
+🟡
+[LC 116](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
+13
+Populating Next Right Pointers II
+🟡
+[LC 117](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
+14
+Count Complete Tree Nodes
+🟡
+[LC 222](https://leetcode.com/problems/count-complete-tree-nodes/)
+15
+Minimum Depth of Binary Tree
+🟢
+[LC 111](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+16
+Even Odd Tree
+🟡
+[LC 1609](https://leetcode.com/problems/even-odd-tree/)
+17
+Find Bottom Left Tree Value
+🟡
+[LC 513](https://leetcode.com/problems/find-bottom-left-tree-value/)
+18
+Find Largest Value in Each Tree Row
+🟡
+[LC 515](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)
+19
+Average of Levels in Binary Tree
+🟢
+[LC 637](https://leetcode.com/problems/average-of-levels-in-binary-tree/)
+20
+Binary Tree Paths
+🟢
+[LC 257](https://leetcode.com/problems/binary-tree-paths/)
+Advanced Binary Tree
+#
+Problem
+Diff
+Link
+21
+⭐ All Nodes Distance K in Binary Tree
+🟡
+[LC 863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)
+22
+⭐ Binary Tree Cameras
+🔴
+[LC 968](https://leetcode.com/problems/binary-tree-cameras/)
+23
+Distribute Coins in Binary Tree
+🟡
+[LC 979](https://leetcode.com/problems/distribute-coins-in-binary-tree/)
+24
+Longest ZigZag Path in a Binary Tree
+🟡
+[LC 1372](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/)
+25
+Maximum Difference Between Node and Ancestor
+🟡
+[LC 1026](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/)
+26
+Smallest String Starting From Leaf
+🟡
+[LC 988](https://leetcode.com/problems/smallest-string-starting-from-leaf/)
+27
+House Robber III
+🟡
+[LC 337](https://leetcode.com/problems/house-robber-iii/)
+28
+⭐ Sum of Distances in Tree
+🔴
+[LC 834](https://leetcode.com/problems/sum-of-distances-in-tree/)
+29
+Maximum Width of Binary Tree
+🟡
+[LC 662](https://leetcode.com/problems/maximum-width-of-binary-tree/)
+30
+Vertical Order Traversal of a Binary Tree
+🟡
+[LC 987](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)
+31
+Binary Tree Coloring Game
+🟡
+[LC 1145](https://leetcode.com/problems/binary-tree-coloring-game/)
+32
+Find Duplicate Subtrees
+🟡
+[LC 652](https://leetcode.com/problems/find-duplicate-subtrees/)
+33
+Flip Equivalent Binary Trees
+🟡
+[LC 951](https://leetcode.com/problems/flip-equivalent-binary-trees/)
+34
+Binary Tree Pruning
+🟡
+[LC 814](https://leetcode.com/problems/binary-tree-pruning/)
+35
+Maximum Product of Splitted Binary Tree
+🟡
+[LC 1339](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/)
+36
+Step-By-Step Directions From a Binary Tree Node to Another
+🟡
+[LC 2096](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/)
+37
+Amount of Time for Binary Tree to Be Infected
+🟡
+[LC 2385](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/)
+38
+All Possible Full Binary Trees
+🟡
+[LC 894](https://leetcode.com/problems/all-possible-full-binary-trees/)
+39
+Recover a Tree From Preorder Traversal
+🔴
+[LC 1028](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/)
+40
+Serialize and Deserialize BST
+🟡
+[LC 449](https://leetcode.com/problems/serialize-and-deserialize-bst/)
+BST
+#
+Problem
+Diff
+Link
+41
+⭐ Search in a Binary Search Tree
+🟢
+[LC 700](https://leetcode.com/problems/search-in-a-binary-search-tree/)
+42
+⭐ Insert into a Binary Search Tree
+🟡
+[LC 701](https://leetcode.com/problems/insert-into-a-binary-search-tree/)
+43
+Delete Node in a BST
+🟡
+[LC 450](https://leetcode.com/problems/delete-node-in-a-bst/)
+44
+Convert Sorted Array to BST
+🟢
+[LC 108](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
+45
+Convert Sorted List to BST
+🟡
+[LC 109](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)
+46
+Balance a Binary Search Tree
+🟡
+[LC 1382](https://leetcode.com/problems/balance-a-binary-search-tree/)
+47
+Increasing Order Search Tree
+🟢
+[LC 897](https://leetcode.com/problems/increasing-order-search-tree/)
+48
+Two Sum IV - Input is a BST
+🟢
+[LC 653](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/)
+49
+Closest Binary Search Tree Value
+🟢
+[LC 270](https://leetcode.com/problems/closest-binary-search-tree-value/)
+50
+Recover Binary Search Tree
+🟡
+[LC 99](https://leetcode.com/problems/recover-binary-search-tree/)
+51
+Verify Preorder Sequence in Binary Search Tree
+🟡
+[LC 255](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/)
+52
+Unique Binary Search Trees
+🟡
+[LC 96](https://leetcode.com/problems/unique-binary-search-trees/)
+53
+Unique Binary Search Trees II
+🟡
+[LC 95](https://leetcode.com/problems/unique-binary-search-trees-ii/)
+54
+Convert BST to Greater Tree
+🟡
+[LC 538](https://leetcode.com/problems/convert-bst-to-greater-tree/)
+55
+Trim a Binary Search Tree
+🟡
+[LC 669](https://leetcode.com/problems/trim-a-binary-search-tree/)
+56
+Range Sum of BST
+🟢
+[LC 938](https://leetcode.com/problems/range-sum-of-bst/)
+57
+Minimum Absolute Difference in BST
+🟢
+[LC 530](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)
+58
+Two Sum BSTs
+🟡
+[LC 1214](https://leetcode.com/problems/two-sum-bsts/)
+59
+Number of Ways to Reorder Array to Get Same BST
+🔴
+[LC 1569](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/)
+60
+Binary Search Tree Iterator
+🟡
+[LC 173](https://leetcode.com/problems/binary-search-tree-iterator/)
+🕸️ PART 2 — GRAPH
+65 Problems
+Graph BFS / DFS
+#
+Problem
+Diff
+Link
+61
+Find Center of Star Graph
+🟢
+[LC 1791](https://leetcode.com/problems/find-center-of-star-graph/)
+62
+Find if Path Exists in Graph
+🟢
+[LC 1971](https://leetcode.com/problems/find-if-path-exists-in-graph/)
+63
+⭐ Keys and Rooms
+🟡
+[LC 841](https://leetcode.com/problems/keys-and-rooms/)
+64
+⭐ All Paths From Source to Target
+🟡
+[LC 797](https://leetcode.com/problems/all-paths-from-source-to-target/)
+65
+Reorder Routes to Make All Paths Lead to the City Zero
+🟡
+[LC 1466](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)
+66
+Detonate the Maximum Bombs
+🟡
+[LC 2101](https://leetcode.com/problems/detonate-the-maximum-bombs/)
+67
+Evaluate Division
+🟡
+[LC 399](https://leetcode.com/problems/evaluate-division/)
+68
+Possible Bipartition
+🟡
+[LC 886](https://leetcode.com/problems/possible-bipartition/)
+69
+Is Graph Bipartite?
+🟡
+[LC 785](https://leetcode.com/problems/is-graph-bipartite/)
+70
+Most Stones Removed with Same Row or Column
+🟡
+[LC 947](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/)
+71
+Regions Cut By Slashes
+🟡
+[LC 959](https://leetcode.com/problems/regions-cut-by-slashes/)
+72
+Surrounded Regions II-style practice: Number of Enclaves
+🟡
+[LC 1020](https://leetcode.com/problems/number-of-enclaves/)
+73
+Count Sub Islands
+🟡
+[LC 1905](https://leetcode.com/problems/count-sub-islands/)
+74
+Number of Closed Islands
+🟡
+[LC 1254](https://leetcode.com/problems/number-of-closed-islands/)
+75
+As Far from Land as Possible
+🟡
+[LC 1162](https://leetcode.com/problems/as-far-from-land-as-possible/)
+Topological Sort / DAG
+#
+Problem
+Diff
+Link
+76
+⭐ Parallel Courses
+🟡
+[LC 1136](https://leetcode.com/problems/parallel-courses/)
+77
+Parallel Courses III
+🔴
+[LC 2050](https://leetcode.com/problems/parallel-courses-iii/)
+78
+Alien Dictionary
+🔴
+[LC 269](https://leetcode.com/problems/alien-dictionary/)
+79
+Sequence Reconstruction
+🟡
+[LC 444](https://leetcode.com/problems/sequence-reconstruction/)
+80
+Sort Items by Groups Respecting Dependencies
+🔴
+[LC 1203](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/)
+81
+Find Eventual Safe States
+🟡
+[LC 802](https://leetcode.com/problems/find-eventual-safe-states/)
+82
+Loud and Rich
+🟡
+[LC 851](https://leetcode.com/problems/loud-and-rich/)
+83
+Minimum Height Trees
+🟡
+[LC 310](https://leetcode.com/problems/minimum-height-trees/)
+84
+Strange Printer II
+🔴
+[LC 1591](https://leetcode.com/problems/strange-printer-ii/)
+85
+Build a Matrix With Conditions
+🟡
+[LC 2392](https://leetcode.com/problems/build-a-matrix-with-conditions/)
+Union Find / DSU
+#
+Problem
+Diff
+Link
+86
+⭐ Redundant Connection
+🟡
+[LC 684](https://leetcode.com/problems/redundant-connection/)
+87
+⭐ Accounts Merge
+🟡
+[LC 721](https://leetcode.com/problems/accounts-merge/)
+88
+Satisfiability of Equality Equations
+🟡
+[LC 990](https://leetcode.com/problems/satisfiability-of-equality-equations/)
+89
+Number of Provinces
+🟡
+[LC 547](https://leetcode.com/problems/number-of-provinces/)
+90
+Number of Operations to Make Network Connected
+🟡
+[LC 1319](https://leetcode.com/problems/number-of-operations-to-make-network-connected/)
+91
+Most Stones Removed with Same Row or Column
+🟡
+[LC 947](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/)
+92
+Checking Existence of Edge Length Limited Paths
+🔴
+[LC 1697](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/)
+93
+Number of Good Paths
+🔴
+[LC 2421](https://leetcode.com/problems/number-of-good-paths/)
+94
+Minimize Malware Spread
+🔴
+[LC 924](https://leetcode.com/problems/minimize-malware-spread/)
+95
+Minimize Malware Spread II
+🔴
+[LC 928](https://leetcode.com/problems/minimize-malware-spread-ii/)
+Shortest Path
+#
+Problem
+Diff
+Link
+96
+⭐ Network Delay Time II-style practice: Cheapest Flights Within K Stops
+🟡
+[LC 787](https://leetcode.com/problems/cheapest-flights-within-k-stops/)
+97
+⭐ Path With Minimum Effort
+🟡
+[LC 1631](https://leetcode.com/problems/path-with-minimum-effort/)
+98
+Swim in Rising Water
+🔴
+[LC 778](https://leetcode.com/problems/swim-in-rising-water/)
+99
+The Maze II
+🟡
+[LC 505](https://leetcode.com/problems/the-maze-ii/)
+100
+The Maze III
+🔴
+[LC 499](https://leetcode.com/problems/the-maze-iii/)
+101
+Shortest Path in Binary Matrix
+🟡
+[LC 1091](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
+102
+Minimum Obstacle Removal to Reach Corner
+🔴
+[LC 2290](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/)
+103
+Minimum Cost to Make at Least One Valid Path in a Grid
+🔴
+[LC 1368](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/)
+104
+Minimum Cost to Connect All Points
+🟡
+[LC 1584](https://leetcode.com/problems/min-cost-to-connect-all-points/)
+105
+Path With Maximum Probability
+🟡
+[LC 1514](https://leetcode.com/problems/path-with-maximum-probability/)
+106
+Find the City With the Smallest Number of Neighbors at a Threshold Distance
+🟡
+[LC 1334](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/)
+107
+Reachable Nodes In Restricted Nodes
+🟡
+[LC 2368](https://leetcode.com/problems/reachable-nodes-with-restrictions/)
+108
+Minimum Time to Visit a Cell In a Grid
+🔴
+[LC 2577](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/)
+109
+Second Minimum Time to Reach Destination
+🔴
+[LC 2045](https://leetcode.com/problems/second-minimum-time-to-reach-destination/)
+110
+Shortest Path Visiting All Nodes
+🔴
+[LC 847](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)
+MST / Advanced Graph
+#
+Problem
+Diff
+Link
+111
+⭐ Min Cost to Connect All Points
+🟡
+[LC 1584](https://leetcode.com/problems/min-cost-to-connect-all-points/)
+112
+Optimize Water Distribution in a Village
+🔴
+[LC 1168](https://leetcode.com/problems/optimize-water-distribution-in-a-village/)
+113
+Connecting Cities With Minimum Cost
+🟡
+[LC 1135](https://leetcode.com/problems/connecting-cities-with-minimum-cost/)
+114
+Critical Connections in a Network
+🔴
+[LC 1192](https://leetcode.com/problems/critical-connections-in-a-network/)
+115
+⭐ Find Critical and Pseudo-Critical Edges in MST
+🔴
+[LC 1489](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/)
+116
+Minimum Cost to Reach Destination in Time
+🔴
+[LC 1928](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/)
+117
+Reconstruct Itinerary
+🔴
+[LC 332](https://leetcode.com/problems/reconstruct-itinerary/)
+118
+Cracking the Safe
+🔴
+[LC 753](https://leetcode.com/problems/cracking-the-safe/)
+119
+Maximum Employees to Be Invited to a Meeting
+🔴
+[LC 2127](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/)
+120
+Longest Cycle in a Graph
+🔴
+[LC 2360](https://leetcode.com/problems/longest-cycle-in-a-graph/)
+121
+Count Unreachable Pairs of Nodes in an Undirected Graph
+🟡
+[LC 2316](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/)
+122
+Reachable Nodes In Subdivided Graph
+🔴
+[LC 882](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)
+123
+Cat and Mouse
+🔴
+[LC 913](https://leetcode.com/problems/cat-and-mouse/)
+124
+Bus Routes
+🔴
+[LC 815](https://leetcode.com/problems/bus-routes/)
+125
+Word Ladder II
+🔴
+[LC 126](https://leetcode.com/problems/word-ladder-ii/)
+🧠 PART 3 — DYNAMIC PROGRAMMING
+60 Problems
+1D DP
+#
+Problem
+Diff
+Link
+126
+⭐ Min Cost Climbing Stairs
+🟢
+[LC 746](https://leetcode.com/problems/min-cost-climbing-stairs/)
+127
+⭐ House Robber
+🟡
+[LC 198](https://leetcode.com/problems/house-robber/)
+128
+⭐ House Robber II
+🟡
+[LC 213](https://leetcode.com/problems/house-robber-ii/)
+129
+⭐ Decode Ways
+🟡
+[LC 91](https://leetcode.com/problems/decode-ways/)
+130
+⭐ Coin Change
+🟡
+[LC 322](https://leetcode.com/problems/coin-change/)
+131
+⭐ Coin Change II
+🟡
+[LC 518](https://leetcode.com/problems/coin-change-ii/)
+132
+Perfect Squares
+🟡
+[LC 279](https://leetcode.com/problems/perfect-squares/)
+133
+Integer Break
+🟡
+[LC 343](https://leetcode.com/problems/integer-break/)
+134
+Combination Sum IV
+🟡
+[LC 377](https://leetcode.com/problems/combination-sum-iv/)
+135
+Partition Equal Subset Sum
+🟡
+[LC 416](https://leetcode.com/problems/partition-equal-subset-sum/)
+136
+Target Sum
+🟡
+[LC 494](https://leetcode.com/problems/target-sum/)
+137
+Last Stone Weight II
+🟡
+[LC 1049](https://leetcode.com/problems/last-stone-weight-ii/)
+138
+⭐ Longest Increasing Subsequence
+🟡
+[LC 300](https://leetcode.com/problems/longest-increasing-subsequence/)
+139
+Number of Longest Increasing Subsequence
+🟡
+[LC 673](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)
+140
+Russian Doll Envelopes
+🔴
+[LC 354](https://leetcode.com/problems/russian-doll-envelopes/)
+141
+Wiggle Subsequence
+🟡
+[LC 376](https://leetcode.com/problems/wiggle-subsequence/)
+142
+Maximum Length of Pair Chain
+🟡
+[LC 646](https://leetcode.com/problems/maximum-length-of-pair-chain/)
+143
+Delete and Earn
+🟡
+[LC 740](https://leetcode.com/problems/delete-and-earn/)
+144
+Best Time to Buy and Sell Stock with Cooldown
+🟡
+[LC 309](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
+145
+Best Time to Buy and Sell Stock III
+🔴
+[LC 123](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)
+2D DP / Grid DP
+#
+Problem
+Diff
+Link
+146
+⭐ Unique Paths
+🟡
+[LC 62](https://leetcode.com/problems/unique-paths/)
+147
+⭐ Unique Paths II
+🟡
+[LC 63](https://leetcode.com/problems/unique-paths-ii/)
+148
+Triangle
+🟡
+[LC 120](https://leetcode.com/problems/triangle/)
+149
+Minimum Falling Path Sum
+🟡
+[LC 931](https://leetcode.com/problems/minimum-falling-path-sum/)
+150
+Minimum Falling Path Sum II
+🔴
+[LC 1289](https://leetcode.com/problems/minimum-falling-path-sum-ii/)
+151
+Dungeon Game
+🔴
+[LC 174](https://leetcode.com/problems/dungeon-game/)
+152
+Cherry Pickup
+🔴
+[LC 741](https://leetcode.com/problems/cherry-pickup/)
+153
+Cherry Pickup II
+🔴
+[LC 1463](https://leetcode.com/problems/cherry-pickup-ii/)
+154
+Maximal Square
+🟡
+[LC 221](https://leetcode.com/problems/maximal-square/)
+155
+Maximal Rectangle
+🔴
+[LC 85](https://leetcode.com/problems/maximal-rectangle/)
+156
+Count Square Submatrices with All Ones
+🟡
+[LC 1277](https://leetcode.com/problems/count-square-submatrices-with-all-ones/)
+String DP
+#
+Problem
+Diff
+Link
+157
+⭐ Longest Common Subsequence
+🟡
+[LC 1143](https://leetcode.com/problems/longest-common-subsequence/)
+158
+⭐ Edit Distance
+🔴
+[LC 72](https://leetcode.com/problems/edit-distance/)
+159
+⭐ Longest Palindromic Subsequence
+🟡
+[LC 516](https://leetcode.com/problems/longest-palindromic-subsequence/)
+160
+Distinct Subsequences
+🔴
+[LC 115](https://leetcode.com/problems/distinct-subsequences/)
+161
+Interleaving String
+🔴
+[LC 97](https://leetcode.com/problems/interleaving-string/)
+162
+Regular Expression Matching
+🔴
+[LC 10](https://leetcode.com/problems/regular-expression-matching/)
+163
+Wildcard Matching
+🔴
+[LC 44](https://leetcode.com/problems/wildcard-matching/)
+164
+Palindrome Partitioning II
+🔴
+[LC 132](https://leetcode.com/problems/palindrome-partitioning-ii/)
+165
+Shortest Common Supersequence
+🔴
+[LC 1092](https://leetcode.com/problems/shortest-common-supersequence/)
+166
+Minimum ASCII Delete Sum for Two Strings
+🟡
+[LC 712](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/)
+Knapsack / Subset DP
+#
+Problem
+Diff
+Link
+167
+0/1 Knapsack
+🟡
+[LC 416](https://leetcode.com/problems/partition-equal-subset-sum/)
+168
+Ones and Zeroes
+🟡
+[LC 474](https://leetcode.com/problems/ones-and-zeroes/)
+169
+Profitable Schemes
+🔴
+[LC 879](https://leetcode.com/problems/profitable-schemes/)
+170
+Tallest Billboard
+🔴
+[LC 956](https://leetcode.com/problems/tallest-billboard/)
+171
+Number of Dice Rolls With Target Sum
+🟡
+[LC 1155](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/)
+172
+Combination Sum IV — advanced state practice
+🟡
+[LC 377](https://leetcode.com/problems/combination-sum-iv/)
+173
+Minimum Cost For Tickets
+🟡
+[LC 983](https://leetcode.com/problems/minimum-cost-for-tickets/)
+174
+Rod Cutting — closest LeetCode formulation: Integer Break
+🟡
+[LC 343](https://leetcode.com/problems/integer-break/)
+175
+Shopping Offers
+🟡
+[LC 638](https://leetcode.com/problems/shopping-offers/)
+Advanced DP
+#
+Problem
+Diff
+Link
+176
+⭐ Burst Balloons
+🔴
+[LC 312](https://leetcode.com/problems/burst-balloons/)
+177
+⭐ Matrix Chain Multiplication style: Minimum Cost Tree From Leaf Values
+🟡
+[LC 1130](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/)
+178
+Strange Printer
+🔴
+[LC 664](https://leetcode.com/problems/strange-printer/)
+179
+Predict the Winner
+🟡
+[LC 486](https://leetcode.com/problems/predict-the-winner/)
+180
+Stone Game
+🟡
+[LC 877](https://leetcode.com/problems/stone-game/)
+181
+Stone Game II
+🟡
+[LC 1140](https://leetcode.com/problems/stone-game-ii/)
+182
+Stone Game III
+🔴
+[LC 1406](https://leetcode.com/problems/stone-game-iii/)
+183
+Minimum Cost to Cut a Stick
+🔴
+[LC 1547](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/)
+184
+Number of Ways to Form a Target String Given a Dictionary
+🔴
+[LC 1639](https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/)
+185
+Number of Ways to Stay in the Same Place After Some Steps
+🔴
+[LC 1269](https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/)
+🔀 PART 4 — MIXED / ADVANCED INTERVIEW PROBLEMS
+15 Problems
+#
+Problem
+Diff
+Link
+186
+⭐ Word Ladder
+🔴
+[LC 127](https://leetcode.com/problems/word-ladder/)
+187
+⭐ Open the Lock
+🟡
+[LC 752](https://leetcode.com/problems/open-the-lock/)
+188
+⭐ Sliding Puzzle
+🔴
+[LC 773](https://leetcode.com/problems/sliding-puzzle/)
+189
+⭐ Minimum Cost to Hire K Workers
+🔴
+[LC 857](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/)
+190
+⭐ IPO
+🔴
+[LC 502](https://leetcode.com/problems/ipo/)
+191
+Maximum Profit in Job Scheduling
+🔴
+[LC 1235](https://leetcode.com/problems/maximum-profit-in-job-scheduling/)
+192
+⭐ Data Stream as Disjoint Intervals
+🔴
+[LC 352](https://leetcode.com/problems/data-stream-as-disjoint-intervals/)
+193
+Range Module
+🔴
+[LC 715](https://leetcode.com/problems/range-module/)
+194
+My Calendar III
+🔴
+[LC 732](https://leetcode.com/problems/my-calendar-iii/)
+195
+Count of Smaller Numbers After Self
+🔴
+[LC 315](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)
+196
+Reverse Pairs
+🔴
+[LC 493](https://leetcode.com/problems/reverse-pairs/)
+197
+⭐ The Skyline Problem
+🔴
+[LC 218](https://leetcode.com/problems/the-skyline-problem/)
+198
+⭐ LFU Cache
+🔴
+[LC 460](https://leetcode.com/problems/lfu-cache/)
+199
+Text Editor
+🔴
+[LC 2296](https://leetcode.com/problems/design-a-text-editor/)
+200
+⭐ Design Search Autocomplete System
+🔴
+[LC 642](https://leetcode.com/problems/design-search-autocomplete-system/)
