@@ -41,6 +41,3 @@ dsa-tracker/
 
 
 
-
-   - Value: Your Render backend URL (e.g. `https://leetpulse-backend.onrender.com` without trailing slash).
-5. Click **Deploy**!
