@@ -55,13 +55,6 @@ router.get('/', optionalAuth, async (req, res) => {
 
         if (up.isStarred) starredCount++;
       });
-
-      // Also count master starred if not explicitly unstarred
-      const masterStarred = await Problem.find({ isStarred: true }).select('_id').lean();
-      masterStarred.forEach((mp) => {
-        const up = userProblems.find((u) => u.problemId.toString() === mp._id.toString());
-        if (!up) starredCount++;
-      });
     } else {
       solvedProblems = await Problem.countDocuments({ status: 'Done' });
       inProgressProblems = await Problem.countDocuments({ status: 'In Progress' });
@@ -70,6 +63,8 @@ router.get('/', optionalAuth, async (req, res) => {
       oneTimeReviseCount = await Problem.countDocuments({ revisionStatus: 'One Time Revision' });
       masteredCount = await Problem.countDocuments({ revisionStatus: 'Mastered' });
     }
+
+    const faangCoreCount = await Problem.countDocuments({ isFaangCore: true });
 
     const todoProblems = Math.max(0, totalProblems - solvedProblems - inProgressProblems);
 
@@ -158,10 +153,20 @@ router.get('/', optionalAuth, async (req, res) => {
       };
     });
 
-    // 5. Daily Goal & Activity history
-    let todayLog = await DailyLog.findOne({ userId, date: todayStr });
+    // 5. Daily Goal, LeetCode-style Heatmap & History
+    const allUserLogs = await DailyLog.find({ userId })
+      .populate('problemIds', 'problemNumber title difficulty topic url')
+      .sort({ date: 1 })
+      .lean();
+
+    const logMap = new Map();
+    allUserLogs.forEach((l) => {
+      logMap.set(l.date, l);
+    });
+
+    let todayLog = logMap.get(todayStr);
     if (!todayLog) {
-      todayLog = new DailyLog({
+      const newToday = new DailyLog({
         userId,
         date: todayStr,
         dayOfWeek,
@@ -170,9 +175,12 @@ router.get('/', optionalAuth, async (req, res) => {
         solvedCount: 0,
         targetMet: false
       });
-      await todayLog.save();
+      await newToday.save();
+      todayLog = newToday.toObject();
+      logMap.set(todayStr, todayLog);
     }
 
+    // Past 14 Days for backwards compatibility
     const pastDays = [];
     for (let i = 13; i >= 0; i--) {
       const d = new Date();
@@ -181,7 +189,7 @@ router.get('/', optionalAuth, async (req, res) => {
       const dow = d.getDay();
       const isWk = dow === 0 || dow === 6;
 
-      let log = await DailyLog.findOne({ userId, date: dStr });
+      let log = logMap.get(dStr);
       pastDays.push({
         date: dStr,
         day: DAYS[dow],
@@ -193,7 +201,63 @@ router.get('/', optionalAuth, async (req, res) => {
       });
     }
 
-    // 6. Calculate Streak (Saturday & Sunday Off rule)
+    // Generate 52 Weeks (~365 days) Heatmap aligned to Sunday start
+    const heatmapDays = [];
+    const todayDayOfWeek = today.getDay(); // 0 = Sun ... 6 = Sat
+    const startDate = new Date(today);
+    startDate.setDate(today.getDate() - (52 * 7 + todayDayOfWeek));
+
+    let totalActiveDays = 0;
+    let totalHeatmapSolved = 0;
+    let maxStreak = 0;
+    let curStreakCounter = 0;
+
+    const loopDate = new Date(startDate);
+    while (loopDate <= today) {
+      const dStr = getLocalDateString(loopDate);
+      const dow = loopDate.getDay();
+      const isWk = dow === 0 || dow === 6;
+      const log = logMap.get(dStr);
+      const count = log ? log.solvedCount : 0;
+      const targetMet = isWk ? (count >= 5) : (log ? log.targetMet : false);
+
+      if (count > 0) {
+        totalActiveDays++;
+        totalHeatmapSolved += count;
+      }
+
+      if (!isWk) {
+        if (targetMet || count >= 5) {
+          curStreakCounter++;
+          if (curStreakCounter > maxStreak) maxStreak = curStreakCounter;
+        } else {
+          curStreakCounter = 0;
+        }
+      } else if (count >= 5) {
+        curStreakCounter++;
+        if (curStreakCounter > maxStreak) maxStreak = curStreakCounter;
+      }
+
+      heatmapDays.push({
+        date: dStr,
+        dayOfWeek: dow,
+        isWeekend: isWk,
+        count,
+        targetMet: log ? log.targetMet : false,
+        problems: log && log.problemIds ? log.problemIds.map(p => ({
+          _id: p._id,
+          problemNumber: p.problemNumber,
+          title: p.title,
+          difficulty: p.difficulty,
+          topic: p.topic,
+          url: p.url
+        })) : []
+      });
+
+      loopDate.setDate(loopDate.getDate() + 1);
+    }
+
+    // 6. Calculate Current Streak (Saturday & Sunday Off rule)
     let streak = 0;
     let checkDate = new Date();
 
@@ -207,7 +271,7 @@ router.get('/', optionalAuth, async (req, res) => {
       checkDate.setDate(checkDate.getDate() - 1);
     }
 
-    let searchDays = 60;
+    let searchDays = 180;
     while (searchDays > 0) {
       const dow = checkDate.getDay();
       const isWk = dow === 0 || dow === 6;
@@ -219,7 +283,7 @@ router.get('/', optionalAuth, async (req, res) => {
         continue;
       }
 
-      const log = await DailyLog.findOne({ userId, date: dStr });
+      const log = logMap.get(dStr);
       if (log && (log.targetMet || log.solvedCount >= 5)) {
         streak++;
         checkDate.setDate(checkDate.getDate() - 1);
@@ -228,6 +292,28 @@ router.get('/', optionalAuth, async (req, res) => {
         break;
       }
     }
+    maxStreak = Math.max(maxStreak, streak);
+
+    // 7. Full History of Solved Problems grouped by date
+    const history = allUserLogs
+      .filter((l) => l.solvedCount > 0)
+      .map((l) => ({
+        date: l.date,
+        dayOfWeek: l.dayOfWeek,
+        dayName: DAYS[l.dayOfWeek],
+        isWeekend: l.isWeekend,
+        solvedCount: l.solvedCount,
+        targetMet: l.targetMet,
+        problems: (l.problemIds || []).map((p) => ({
+          _id: p._id,
+          problemNumber: p.problemNumber,
+          title: p.title,
+          difficulty: p.difficulty,
+          topic: p.topic,
+          url: p.url
+        }))
+      }))
+      .sort((a, b) => b.date.localeCompare(a.date));
 
     res.json({
       success: true,
@@ -239,6 +325,7 @@ router.get('/', optionalAuth, async (req, res) => {
           todo: todoProblems,
           percentage: totalProblems > 0 ? Math.round((solvedProblems / totalProblems) * 100) : 0,
           starred: starredCount,
+          faangCore: faangCoreCount,
           needRevise: needReviseCount,
           oneTimeRevise: oneTimeReviseCount,
           mastered: masteredCount
@@ -251,6 +338,7 @@ router.get('/', optionalAuth, async (req, res) => {
           todaySolved: todayLog.solvedCount,
           targetMet: todayLog.targetMet,
           streak,
+          maxStreak,
           message: isWeekend
             ? 'Weekend Off (Rest & Revision Day) - Free practice!'
             : todayLog.targetMet
@@ -260,7 +348,15 @@ router.get('/', optionalAuth, async (req, res) => {
         difficulties: difficultyStats,
         sheets: sheetStats,
         topics: topicStats,
-        recentActivity: pastDays
+        recentActivity: pastDays,
+        heatmap: {
+          days: heatmapDays,
+          totalActiveDays,
+          totalSolved: totalHeatmapSolved,
+          currentStreak: streak,
+          maxStreak
+        },
+        history
       }
     });
   } catch (error) {

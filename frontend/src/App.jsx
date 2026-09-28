@@ -35,6 +35,7 @@ export default function App() {
   const [selectedRevision, setSelectedRevision] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [starredOnly, setStarredOnly] = useState(false);
+  const [faangCoreOnly, setFaangCoreOnly] = useState(false);
 
   // Other Modals
   const [isAddOpen, setIsAddOpen] = useState(false);
@@ -94,6 +95,7 @@ export default function App() {
       if (selectedStatus !== 'all') params.append('status', selectedStatus);
       if (selectedRevision !== 'all') params.append('revisionStatus', selectedRevision);
       if (starredOnly) params.append('isStarred', 'true');
+      if (faangCoreOnly) params.append('isFaangCore', 'true');
       if (searchQuery.trim()) params.append('search', searchQuery.trim());
 
       const res = await fetch(`${API_BASE}/api/problems?${params.toString()}`, {
@@ -115,6 +117,7 @@ export default function App() {
     selectedStatus,
     selectedRevision,
     starredOnly,
+    faangCoreOnly,
     searchQuery,
     getAuthHeaders
   ]);
@@ -188,6 +191,11 @@ export default function App() {
   const handleQuickFilter = (filter) => {
     if (filter.isStarred !== undefined) {
       setStarredOnly(filter.isStarred);
+      if (filter.isStarred) setFaangCoreOnly(false);
+    }
+    if (filter.isFaangCore !== undefined) {
+      setFaangCoreOnly(filter.isFaangCore);
+      if (filter.isFaangCore) setStarredOnly(false);
     }
     if (filter.revisionStatus !== undefined) {
       if (filter.revisionStatus === 'all-flagged') {
@@ -253,11 +261,14 @@ export default function App() {
           onQuickFilter={handleQuickFilter}
         />
 
-        {/* 3. Analytics Hub */}
+        {/* 3. Analytics Hub with LeetCode-style Heatmap & History */}
         <AnalyticsSection
           topics={analytics?.topics || []}
           sheets={analytics?.sheets || []}
           recentActivity={analytics?.recentActivity || []}
+          heatmap={analytics?.heatmap}
+          history={analytics?.history || []}
+          dailyGoal={analytics?.dailyGoal}
           activeTopic={selectedTopic}
           onSelectTopic={(topic) => setSelectedTopic(topic)}
         />
@@ -279,7 +290,25 @@ export default function App() {
           searchQuery={searchQuery}
           onChangeSearch={setSearchQuery}
           starredOnly={starredOnly}
-          onToggleStarredOnly={() => setStarredOnly((prev) => !prev)}
+          onToggleStarredOnly={() => {
+            setStarredOnly((prev) => !prev);
+            setFaangCoreOnly(false);
+          }}
+          faangCoreOnly={faangCoreOnly}
+          onToggleFaangCoreOnly={() => {
+            setFaangCoreOnly((prev) => !prev);
+            setStarredOnly(false);
+          }}
+          onResetAllFilters={() => {
+            setSelectedSheet('all');
+            setSelectedTopic('all');
+            setSelectedDifficulty('all');
+            setSelectedStatus('all');
+            setSelectedRevision('all');
+            setSearchQuery('');
+            setStarredOnly(false);
+            setFaangCoreOnly(false);
+          }}
           onUpdateProblem={handleUpdateProblem}
           onOpenNotes={(problem) => setNotesProblem(problem)}
           dailyGoal={analytics?.dailyGoal}

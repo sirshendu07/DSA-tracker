@@ -35,6 +35,9 @@ export default function ProblemTable({
   onChangeSearch,
   starredOnly,
   onToggleStarredOnly,
+  faangCoreOnly,
+  onToggleFaangCoreOnly,
+  onResetAllFilters,
   onUpdateProblem,
   onOpenNotes,
   dailyGoal
@@ -205,19 +208,30 @@ export default function ProblemTable({
           </select>
         </div>
 
-        {/* Filter Pills row (Starred toggle, Clear) */}
+        {/* Filter Pills row (Starred toggle, FAANG Core toggle, Clear) */}
         <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs">
           <div className="flex flex-wrap items-center gap-2">
             <button
               onClick={() => { onToggleStarredOnly(); setCurrentPage(1); }}
-              className={`px-3 py-1 rounded-lg border text-xs font-medium transition flex items-center space-x-1.5 ${
+              className={`px-3 py-1.5 rounded-lg border text-xs font-medium transition flex items-center space-x-1.5 ${
                 starredOnly
                   ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-sm shadow-amber-500/10'
                   : 'bg-slate-900/50 text-slate-400 border-slate-800 hover:text-slate-200'
               }`}
             >
               <Star className={`w-3.5 h-3.5 ${starredOnly ? 'fill-amber-400 text-amber-400' : ''}`} />
-              <span>⭐ FAANG Starred Only</span>
+              <span>⭐ My Starred</span>
+            </button>
+
+            <button
+              onClick={() => { onToggleFaangCoreOnly(); setCurrentPage(1); }}
+              className={`px-3 py-1.5 rounded-lg border text-xs font-medium transition flex items-center space-x-1.5 ${
+                faangCoreOnly
+                  ? 'bg-indigo-600/30 text-indigo-200 border-indigo-500/50 shadow-sm shadow-indigo-500/20 font-semibold'
+                  : 'bg-slate-900/50 text-slate-400 border-slate-800 hover:text-slate-200'
+              }`}
+            >
+              <span>🔥 FAANG Core (132)</span>
             </button>
 
             {selectedTopic && selectedTopic !== 'all' && (
@@ -230,16 +244,20 @@ export default function ProblemTable({
             )}
           </div>
 
-          {(selectedSheet !== 'all' || selectedTopic !== 'all' || selectedDifficulty !== 'all' || selectedStatus !== 'all' || selectedRevision !== 'all' || searchQuery || starredOnly) && (
+          {(selectedSheet !== 'all' || selectedTopic !== 'all' || selectedDifficulty !== 'all' || selectedStatus !== 'all' || selectedRevision !== 'all' || searchQuery || starredOnly || faangCoreOnly) && (
             <button
               onClick={() => {
-                onChangeSheet('all');
-                onChangeTopic('all');
-                onChangeDifficulty('all');
-                onChangeStatus('all');
-                onChangeRevision('all');
-                onChangeSearch('');
-                if (starredOnly) onToggleStarredOnly();
+                if (onResetAllFilters) {
+                  onResetAllFilters();
+                } else {
+                  onChangeSheet('all');
+                  onChangeTopic('all');
+                  onChangeDifficulty('all');
+                  onChangeStatus('all');
+                  onChangeRevision('all');
+                  onChangeSearch('');
+                  if (starredOnly) onToggleStarredOnly();
+                }
                 setCurrentPage(1);
               }}
               className="text-xs text-rose-400 hover:text-rose-300 underline"
@@ -328,18 +346,25 @@ export default function ProblemTable({
 
                 {/* Problem Name & Direct LeetCode Link */}
                 <div className="mb-2">
-                  <a
-                    href={problem.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Open on LeetCode"
-                    className={`text-sm font-semibold hover:underline hover:text-indigo-400 transition flex items-baseline gap-1.5 ${
-                      isDone ? 'text-slate-300 line-through opacity-80' : 'text-white'
-                    }`}
-                  >
-                    <span>{problem.title}</span>
-                    <ExternalLink className="w-3.5 h-3.5 text-indigo-400 opacity-70 shrink-0 inline-block self-center" />
-                  </a>
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <a
+                      href={problem.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Open on LeetCode"
+                      className={`text-sm font-semibold hover:underline hover:text-indigo-400 transition flex items-baseline gap-1.5 ${
+                        isDone ? 'text-slate-300 line-through opacity-80' : 'text-white'
+                      }`}
+                    >
+                      <span>{problem.title}</span>
+                      <ExternalLink className="w-3.5 h-3.5 text-indigo-400 opacity-70 shrink-0 inline-block self-center" />
+                    </a>
+                    {problem.isFaangCore && (
+                      <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30 shrink-0">
+                        ⭐ FAANG Core
+                      </span>
+                    )}
+                  </div>
                   {problem.notes && (
                     <p className="text-[11px] text-slate-400 line-clamp-2 mt-1 italic">
                       <span className="text-indigo-400 font-medium">Note:</span> {problem.notes}
@@ -516,6 +541,11 @@ export default function ProblemTable({
                           <span>{problem.title}</span>
                           <ExternalLink className="w-3 h-3 text-indigo-400 opacity-60 hover:opacity-100 shrink-0" />
                         </a>
+                        {problem.isFaangCore && (
+                          <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30 shrink-0">
+                            ⭐ FAANG Core
+                          </span>
+                        )}
                       </div>
                       {problem.notes && (
                         <p className="text-[11px] text-slate-400 line-clamp-1 mt-0.5 italic flex items-center gap-1">

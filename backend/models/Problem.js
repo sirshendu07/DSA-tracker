@@ -40,6 +40,11 @@ const problemSchema = new mongoose.Schema(
       type: String,
       required: true
     },
+    isFaangCore: {
+      type: Boolean,
+      default: false,
+      index: true
+    },
     isStarred: {
       type: Boolean,
       default: false,

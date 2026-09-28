@@ -46,6 +46,7 @@ router.get('/', optionalAuth, async (req, res) => {
       if (status && status !== 'all') baseQuery.status = status;
       if (revisionStatus && revisionStatus !== 'all') baseQuery.revisionStatus = revisionStatus;
       if (isStarred === 'true') baseQuery.isStarred = true;
+      if (req.query.isFaangCore === 'true') baseQuery.isFaangCore = true;
 
       const problems = await Problem.find(baseQuery)
         .sort({ problemNumber: 1, createdAt: 1 })
@@ -77,7 +78,8 @@ router.get('/', optionalAuth, async (req, res) => {
         status: up ? up.status : 'Todo',
         revisionStatus: up ? up.revisionStatus : 'None',
         notes: up && up.notes !== undefined ? up.notes : (p.notes || ''),
-        isStarred: up && typeof up.isStarred === 'boolean' ? up.isStarred : Boolean(p.isStarred),
+        isStarred: up && typeof up.isStarred === 'boolean' ? up.isStarred : false,
+        isFaangCore: Boolean(p.isFaangCore),
         solvedAt: up ? up.solvedAt : null
       };
     });
@@ -93,6 +95,10 @@ router.get('/', optionalAuth, async (req, res) => {
 
     if (isStarred === 'true') {
       merged = merged.filter((p) => p.isStarred === true);
+    }
+
+    if (req.query.isFaangCore === 'true') {
+      merged = merged.filter((p) => p.isFaangCore === true);
     }
 
     res.json({
@@ -157,7 +163,7 @@ router.patch('/:id', optionalAuth, async (req, res) => {
           status: 'Todo',
           revisionStatus: 'None',
           notes: '',
-          isStarred: problem.isStarred
+          isStarred: false
         });
       }
 

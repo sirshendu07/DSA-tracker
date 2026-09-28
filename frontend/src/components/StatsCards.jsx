@@ -14,6 +14,7 @@ export default function StatsCards({
   const needRevise = summary?.needRevise || 0;
   const oneTimeRevise = summary?.oneTimeRevise || 0;
   const mastered = summary?.mastered || 0;
+  const faangCore = summary?.faangCore || 132;
 
   const todaySolved = dailyGoal?.todaySolved || 0;
   const dailyTarget = dailyGoal?.dailyTarget || 5;
@@ -180,10 +181,10 @@ export default function StatsCards({
         </div>
       </div>
 
-      {/* 4. Curated FAANG Essentials */}
+      {/* 4. My Starred & FAANG Core */}
       <div className="glass-panel rounded-2xl p-4 sm:p-5 border border-slate-800/80 relative overflow-hidden group hover:border-slate-700/80 transition-all shadow-lg shadow-black/20">
         <div className="flex items-center justify-between mb-3">
-          <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">FAANG Starred (⭐)</span>
+          <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">My Starred & Core</span>
           <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400">
             <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
           </div>
@@ -191,20 +192,32 @@ export default function StatsCards({
 
         <div className="flex items-baseline space-x-2 mb-2">
           <span className="text-3xl font-extrabold text-white tracking-tight">{starred}</span>
-          <span className="text-slate-400 text-sm font-medium">High Frequency</span>
+          <span className="text-slate-400 text-sm font-medium">Starred by You</span>
         </div>
 
-        <p className="text-xs text-slate-400 mb-3 line-clamp-1">
-          Hand-picked core patterns frequently repeated in Google, Meta, Amazon interviews.
-        </p>
-
-        <div className="flex items-center justify-between text-[11px] text-slate-400 pt-1 border-t border-slate-800/60">
+        <div className="flex items-center gap-2 mb-3">
           <button
             onClick={() => onQuickFilter({ isStarred: true })}
-            className="w-full py-1 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/20 transition flex items-center justify-center space-x-1.5 font-medium"
+            className="flex-1 py-1 px-2 rounded-lg text-xs font-medium bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/20 transition flex items-center justify-center space-x-1"
           >
             <Star className="w-3 h-3 fill-amber-400" />
-            <span>Show All {starred} Starred Problems</span>
+            <span>My Starred ({starred})</span>
+          </button>
+          <button
+            onClick={() => onQuickFilter({ isFaangCore: true })}
+            className="flex-1 py-1 px-2 rounded-lg text-xs font-medium bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/20 transition flex items-center justify-center space-x-1"
+          >
+            <span>🔥 Core ({faangCore})</span>
+          </button>
+        </div>
+
+        <div className="flex items-center justify-between text-[11px] text-slate-400 pt-1 border-t border-slate-800/60">
+          <span className="text-amber-400/90 font-medium">{faangCore} FAANG Core Questions</span>
+          <button
+            onClick={() => onQuickFilter({ isStarred: true })}
+            className="text-slate-300 hover:text-white flex items-center gap-0.5 text-[10px]"
+          >
+            Filter Starred <ArrowUpRight className="w-3 h-3" />
           </button>
         </div>
       </div>
