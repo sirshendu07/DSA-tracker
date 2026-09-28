@@ -26,9 +26,9 @@ export default function StatsCards({
   const hardStats = difficulties?.find(d => d.difficulty === 'Hard') || { solved: 0, total: 0 };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6">
       {/* 1. Total Progress */}
-      <div className="glass-panel rounded-2xl p-5 border border-slate-800/80 relative overflow-hidden group hover:border-slate-700/80 transition-all shadow-lg shadow-black/20">
+      <div className="glass-panel rounded-2xl p-4 sm:p-5 border border-slate-800/80 relative overflow-hidden group hover:border-slate-700/80 transition-all shadow-lg shadow-black/20">
         <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/10 rounded-full blur-2xl group-hover:bg-indigo-500/20 transition-all pointer-events-none" />
         <div className="flex items-center justify-between mb-3">
           <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Overall Solved</span>
@@ -71,7 +71,7 @@ export default function StatsCards({
       </div>
 
       {/* 2. Daily 5 Target & Weekend Off Engine */}
-      <div className={`glass-panel rounded-2xl p-5 border relative overflow-hidden group transition-all shadow-lg shadow-black/20 ${
+      <div className={`glass-panel rounded-2xl p-4 sm:p-5 border relative overflow-hidden group transition-all shadow-lg shadow-black/20 ${
         isWeekend
           ? 'border-amber-500/30 bg-gradient-to-br from-amber-500/5 via-slate-900 to-slate-900'
           : todaySolved >= dailyTarget
@@ -141,7 +141,7 @@ export default function StatsCards({
       </div>
 
       {/* 3. Revision Queue */}
-      <div className="glass-panel rounded-2xl p-5 border border-slate-800/80 relative overflow-hidden group hover:border-slate-700/80 transition-all shadow-lg shadow-black/20">
+      <div className="glass-panel rounded-2xl p-4 sm:p-5 border border-slate-800/80 relative overflow-hidden group hover:border-slate-700/80 transition-all shadow-lg shadow-black/20">
         <div className="flex items-center justify-between mb-3">
           <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Revision Radar</span>
           <div className="p-2 rounded-xl bg-rose-500/10 border border-rose-500/20 text-rose-400">
@@ -181,7 +181,7 @@ export default function StatsCards({
       </div>
 
       {/* 4. Curated FAANG Essentials */}
-      <div className="glass-panel rounded-2xl p-5 border border-slate-800/80 relative overflow-hidden group hover:border-slate-700/80 transition-all shadow-lg shadow-black/20">
+      <div className="glass-panel rounded-2xl p-4 sm:p-5 border border-slate-800/80 relative overflow-hidden group hover:border-slate-700/80 transition-all shadow-lg shadow-black/20">
         <div className="flex items-center justify-between mb-3">
           <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">FAANG Starred (⭐)</span>
           <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400">

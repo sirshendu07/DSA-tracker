@@ -180,7 +180,8 @@ router.patch('/:id', optionalAuth, async (req, res) => {
               problemIds: [problem._id]
             });
           } else {
-            if (!daily.problemIds.includes(problem._id)) {
+            const alreadyLogged = daily.problemIds.some(id => id.toString() === problem._id.toString());
+            if (!alreadyLogged) {
               daily.problemIds.push(problem._id);
               daily.solvedCount = daily.problemIds.length;
             }
@@ -239,7 +240,8 @@ router.patch('/:id', optionalAuth, async (req, res) => {
             problemIds: [problem._id]
           });
         } else {
-          if (!daily.problemIds.includes(problem._id)) {
+          const alreadyLogged = daily.problemIds.some(id => id.toString() === problem._id.toString());
+          if (!alreadyLogged) {
             daily.problemIds.push(problem._id);
             daily.solvedCount = daily.problemIds.length;
           }

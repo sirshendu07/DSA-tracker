@@ -206,8 +206,8 @@ export default function ProblemTable({
         </div>
 
         {/* Filter Pills row (Starred toggle, Clear) */}
-        <div className="mt-3 flex items-center justify-between text-xs">
-          <div className="flex items-center space-x-2">
+        <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs">
+          <div className="flex flex-wrap items-center gap-2">
             <button
               onClick={() => { onToggleStarredOnly(); setCurrentPage(1); }}
               className={`px-3 py-1 rounded-lg border text-xs font-medium transition flex items-center space-x-1.5 ${
@@ -250,9 +250,174 @@ export default function ProblemTable({
         </div>
       </div>
 
-      {/* 3. Problems Table */}
-      <div className="overflow-x-auto">
-        <table className="w-full text-left text-xs border-collapse">
+      {/* 3. Problems List - Responsive Mobile Cards (< md) & Desktop Table (>= md) */}
+
+      {/* 3A. Mobile Card View (Phone / Small Screens) */}
+      <div className="block md:hidden divide-y divide-slate-800/80">
+        {loading ? (
+          <div className="py-12 text-center text-slate-400">
+            <div className="flex flex-col items-center justify-center space-y-2">
+              <div className="w-6 h-6 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin" />
+              <span>Loading curated FAANG problems...</span>
+            </div>
+          </div>
+        ) : visibleProblems.length === 0 ? (
+          <div className="py-12 px-4 text-center text-slate-400">
+            <div className="max-w-xs mx-auto space-y-2">
+              <AlertCircle className="w-8 h-8 text-slate-500 mx-auto" />
+              <p className="font-semibold text-slate-300">No problems match your filters</p>
+              <p className="text-xs text-slate-500">Try adjusting your search terms, topic, or difficulty filters.</p>
+            </div>
+          </div>
+        ) : (
+          visibleProblems.map((problem) => {
+            const isDone = problem.status === 'Done';
+            return (
+              <div
+                key={problem._id}
+                className={`p-3.5 transition-colors ${
+                  isDone ? 'bg-emerald-950/15' : 'hover:bg-slate-900/60'
+                }`}
+              >
+                {/* Header: Done Checkbox + Star + Problem # + Difficulty */}
+                <div className="flex items-center justify-between gap-2 mb-2">
+                  <div className="flex items-center space-x-2.5">
+                    <button
+                      onClick={() => handleToggleStatus(problem)}
+                      title={isDone ? 'Mark as Todo' : 'Mark as Solved'}
+                      className={`w-7 h-7 rounded-lg border flex items-center justify-center transition-all ${
+                        isDone
+                          ? 'bg-emerald-500 border-emerald-400 text-black shadow-sm shadow-emerald-500/40'
+                          : 'border-slate-700 bg-slate-900/60 text-transparent active:border-indigo-400'
+                      }`}
+                    >
+                      <Check className="w-4 h-4 stroke-[3]" />
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleToggleStar(problem);
+                      }}
+                      title={problem.isStarred ? 'Unstar problem' : 'Star FAANG high-frequency question'}
+                      className="p-1 rounded-lg text-slate-500 active:scale-125 transition"
+                    >
+                      <Star
+                        className={`w-4 h-4 ${
+                          problem.isStarred
+                            ? 'fill-amber-400 text-amber-400 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]'
+                            : 'text-slate-600'
+                        }`}
+                      />
+                    </button>
+
+                    <span className="font-mono text-xs font-semibold text-slate-400">
+                      #{problem.problemNumber}
+                    </span>
+                  </div>
+
+                  <span
+                    className={`px-2 py-0.5 rounded-full text-[10px] font-bold border ${getDifficultyBadge(
+                      problem.difficulty
+                    )}`}
+                  >
+                    {problem.difficulty}
+                  </span>
+                </div>
+
+                {/* Problem Name & Direct LeetCode Link */}
+                <div className="mb-2">
+                  <a
+                    href={problem.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open on LeetCode"
+                    className={`text-sm font-semibold hover:underline hover:text-indigo-400 transition flex items-baseline gap-1.5 ${
+                      isDone ? 'text-slate-300 line-through opacity-80' : 'text-white'
+                    }`}
+                  >
+                    <span>{problem.title}</span>
+                    <ExternalLink className="w-3.5 h-3.5 text-indigo-400 opacity-70 shrink-0 inline-block self-center" />
+                  </a>
+                  {problem.notes && (
+                    <p className="text-[11px] text-slate-400 line-clamp-2 mt-1 italic">
+                      <span className="text-indigo-400 font-medium">Note:</span> {problem.notes}
+                    </p>
+                  )}
+                </div>
+
+                {/* Chapter & Topic Badges */}
+                <div className="flex flex-wrap items-center gap-1.5 mb-2.5 text-[11px]">
+                  <span className="px-2 py-0.5 rounded-md bg-slate-800 text-slate-300 border border-slate-700/60 font-medium">
+                    {problem.topic}
+                  </span>
+                  {problem.subtopic && problem.subtopic !== problem.topic && (
+                    <span className="px-1.5 py-0.5 rounded-md bg-slate-800/60 text-slate-400 text-[10px]">
+                      {problem.subtopic}
+                    </span>
+                  )}
+                </div>
+
+                {/* Footer Controls: Revision Status + Notes Modal + Direct Link */}
+                <div className="flex items-center justify-between pt-2 border-t border-slate-800/60 gap-2">
+                  <div className="flex-1">
+                    <select
+                      value={problem.revisionStatus || 'None'}
+                      onChange={(e) => handleChangeRevision(problem, e.target.value)}
+                      className={`w-full text-xs px-2 py-1.5 rounded-lg border font-medium cursor-pointer focus:outline-none transition ${getRevisionBadge(
+                        problem.revisionStatus
+                      )}`}
+                    >
+                      <option value="None" className="bg-slate-900 text-slate-300">
+                        No Revision Tag
+                      </option>
+                      <option value="Need Revise" className="bg-slate-900 text-rose-300">
+                        🔴 Need Revise
+                      </option>
+                      <option value="One Time Revision" className="bg-slate-900 text-amber-300">
+                        🟡 1-Time Revise
+                      </option>
+                      <option value="Mastered" className="bg-slate-900 text-emerald-300">
+                        🟢 Mastered
+                      </option>
+                    </select>
+                  </div>
+
+                  <div className="flex items-center space-x-1.5 shrink-0">
+                    <button
+                      onClick={() => onOpenNotes(problem)}
+                      title="Add personal solution notes"
+                      className={`px-2.5 py-1.5 rounded-lg border text-xs font-medium flex items-center space-x-1 transition ${
+                        problem.notes
+                          ? 'bg-indigo-500/20 border-indigo-500/40 text-indigo-300'
+                          : 'bg-slate-800/80 border-slate-700 text-slate-300 active:bg-slate-700'
+                      }`}
+                    >
+                      <FileText className="w-3.5 h-3.5" />
+                      <span>Notes</span>
+                    </button>
+
+                    <a
+                      href={problem.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Direct link to LeetCode"
+                      className="p-1.5 rounded-lg bg-slate-800/80 border border-slate-700 text-slate-300 active:text-indigo-400 transition"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            );
+          })
+        )}
+      </div>
+
+      {/* 3B. Desktop Table View (>= md) */}
+      <div className="hidden md:block overflow-x-auto">
+        <table className="w-full text-left text-xs border-collapse min-w-[720px]">
           <thead>
             <tr className="border-b border-slate-800 bg-slate-950/60 text-slate-400 uppercase tracking-wider font-semibold">
               <th className="py-3 px-4 w-12 text-center">Done</th>

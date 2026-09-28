@@ -143,8 +143,15 @@ export default function App() {
 
   // Optimistic update for problem actions
   const handleUpdateProblem = async (problemId, updates) => {
+    let previousProblem = null;
     setProblems((prev) =>
-      prev.map((p) => (p._id === problemId ? { ...p, ...updates } : p))
+      prev.map((p) => {
+        if (p._id === problemId) {
+          previousProblem = { ...p };
+          return { ...p, ...updates };
+        }
+        return p;
+      })
     );
 
     try {
@@ -154,12 +161,26 @@ export default function App() {
         body: JSON.stringify(updates)
       });
       const data = await res.json();
-      if (data.success) {
+      if (data.success && data.data) {
+        setProblems((prev) =>
+          prev.map((p) => (p._id === problemId ? { ...p, ...data.data } : p))
+        );
         fetchAnalytics();
+      } else {
+        console.error('Failed to update problem on server:', data.message);
+        if (previousProblem) {
+          setProblems((prev) =>
+            prev.map((p) => (p._id === problemId ? previousProblem : p))
+          );
+        }
       }
     } catch (err) {
-      console.error('Failed to update problem:', err);
-      fetchProblems();
+      console.error('Network error updating problem:', err);
+      if (previousProblem) {
+        setProblems((prev) =>
+          prev.map((p) => (p._id === problemId ? previousProblem : p))
+        );
+      }
     }
   };
 

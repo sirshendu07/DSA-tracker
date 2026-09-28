@@ -128,12 +128,31 @@ export default function Navbar({
           ) : (
             <button
               onClick={onOpenAuth}
-              className="flex items-center space-x-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold bg-gradient-to-r from-indigo-600 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white shadow-md shadow-indigo-500/20 transition"
+              className="flex items-center space-x-1.5 px-2.5 sm:px-3.5 py-1.5 rounded-xl text-xs font-bold bg-gradient-to-r from-indigo-600 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white shadow-md shadow-indigo-500/20 transition whitespace-nowrap"
             >
-              <LogIn className="w-3.5 h-3.5" />
-              <span>Sign In / Sign Up</span>
+              <LogIn className="w-3.5 h-3.5 shrink-0" />
+              <span className="hidden sm:inline">Sign In / Sign Up</span>
+              <span className="sm:hidden">Sign In</span>
             </button>
           )}
+        </div>
+      </div>
+
+      {/* Mobile Live Daily Goal & Streak Bar */}
+      <div className="lg:hidden flex items-center justify-between px-4 py-2 border-t border-slate-800/80 bg-slate-950/80 backdrop-blur-md text-xs">
+        <div className="flex items-center space-x-1.5 text-slate-300">
+          <Calendar className="w-3.5 h-3.5 text-indigo-400" />
+          {isWeekend ? (
+            <span className="text-amber-300 font-medium">🌴 Weekend Off (Rest Day)</span>
+          ) : (
+            <span>
+              Target: <strong className="text-white">{todaySolved}/{dailyTarget}</strong> {targetMet ? '🎯 Target Hit!' : 'Solved'}
+            </span>
+          )}
+        </div>
+        <div className="flex items-center space-x-1 text-orange-400 font-semibold bg-orange-500/10 px-2.5 py-0.5 rounded-full border border-orange-500/20">
+          <Flame className="w-3.5 h-3.5 fill-orange-500 text-orange-500" />
+          <span>{streak}d Streak</span>
         </div>
       </div>
     </header>

@@ -11,7 +11,7 @@ export default function AnalyticsSection({
   const [activeTab, setActiveTab] = useState('topics'); // 'topics' | 'activity' | 'sheets'
 
   return (
-    <div className="glass-panel rounded-2xl p-5 border border-slate-800/80 mb-6 shadow-xl shadow-black/20">
+    <div className="glass-panel rounded-2xl p-4 sm:p-5 border border-slate-800/80 mb-6 shadow-xl shadow-black/20">
       {/* Section Header & Sub-Tabs */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-slate-800/80">
         <div className="flex items-center space-x-2.5">
@@ -27,7 +27,7 @@ export default function AnalyticsSection({
         </div>
 
         {/* Tab Switcher */}
-        <div className="flex items-center p-1 bg-slate-900/80 rounded-xl border border-slate-800 text-xs font-medium">
+        <div className="flex items-center p-1 bg-slate-900/80 rounded-xl border border-slate-800 text-xs font-medium overflow-x-auto max-w-full">
           <button
             onClick={() => setActiveTab('topics')}
             className={`px-3 py-1.5 rounded-lg transition-all flex items-center space-x-1.5 ${
@@ -140,13 +140,13 @@ export default function AnalyticsSection({
             <span className="text-emerald-400 font-medium">🎯 Goal: 5 Solved / Weekday</span>
           </div>
 
-          <div className="grid grid-cols-7 sm:grid-cols-14 gap-2">
+          <div className="grid grid-cols-7 sm:grid-cols-14 gap-1 sm:gap-2">
             {recentActivity.map((day) => {
               const isToday = day.date === new Date().toISOString().slice(0, 10);
               return (
                 <div
                   key={day.date}
-                  className={`p-3 rounded-xl border flex flex-col items-center justify-between text-center transition-all ${
+                  className={`p-1.5 sm:p-3 rounded-xl border flex flex-col items-center justify-between text-center transition-all ${
                     isToday
                       ? 'border-indigo-500 bg-indigo-950/40 ring-1 ring-indigo-500/50'
                       : day.isWeekend
@@ -158,10 +158,10 @@ export default function AnalyticsSection({
                       : 'bg-slate-900/50 border-slate-800/80'
                   }`}
                 >
-                  <span className="text-[10px] font-semibold text-slate-400 uppercase">
+                  <span className="text-[9px] sm:text-[10px] font-semibold text-slate-400 uppercase">
                     {day.day}
                   </span>
-                  <span className="text-[10px] text-slate-500 my-0.5">
+                  <span className="text-[8px] sm:text-[10px] text-slate-500 my-0.5">
                     {day.date.slice(5)}
                   </span>
 
